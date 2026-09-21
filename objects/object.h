@@ -4,14 +4,6 @@
 #include "classification.h"
 #include <vector>
 
-struct instance {
-  std::string name;
-
-  gameObjects::objtypes type;
-  std::vector<instance *> children;
-  instance *parent;
-};
-
 struct object {
   std::string name;
 
@@ -28,6 +20,20 @@ struct object {
   vec3df scale = {1, 1, 1};
 
   float rotX, rotY, rotZ;
+};
+
+struct instance {
+  std::string name;
+
+  gameObjects::objtypes type;
+  std::vector<instance *> children;
+  instance *parent;
+  virtual ~instance() = default; // makes it polymorphic
+
+  void setParent(instance *p) {
+    parent = p;
+    p->children.push_back(this);
+  }
 };
 
 namespace instanceTypes {
@@ -69,4 +75,12 @@ struct lightsource : instance {
   float range;
   // color color;
 };
+
+struct group : instance {
+  vec3df position = {0, 0, 0};
+  vec3df rot = {0, 0, 0};
+
+  // color color;
+};
+
 } // namespace instanceTypes

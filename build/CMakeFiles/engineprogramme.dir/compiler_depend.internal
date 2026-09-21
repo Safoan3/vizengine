@@ -74,7 +74,9 @@ CMakeFiles/engineprogramme.dir/engine/engine.cpp.o
  /usr/include/bits/stdint-intn.h
  /usr/include/bits/stdint-least.h
  /usr/include/bits/stdint-uintn.h
+ /usr/include/bits/stdio.h
  /usr/include/bits/stdio_lim.h
+ /usr/include/bits/stdlib-bsearch.h
  /usr/include/bits/stdlib-float.h
  /usr/include/bits/struct_mutex.h
  /usr/include/bits/struct_rwlock.h
@@ -186,6 +188,8 @@ CMakeFiles/engineprogramme.dir/engine/engine.cpp.o
  /usr/include/c++/16/bits/postypes.h
  /usr/include/c++/16/bits/predefined_ops.h
  /usr/include/c++/16/bits/ptr_traits.h
+ /usr/include/c++/16/bits/random.h
+ /usr/include/c++/16/bits/random.tcc
  /usr/include/c++/16/bits/range_access.h
  /usr/include/c++/16/bits/ranges_algobase.h
  /usr/include/c++/16/bits/ranges_base.h
@@ -213,6 +217,7 @@ CMakeFiles/engineprogramme.dir/engine/engine.cpp.o
  /usr/include/c++/16/bits/stl_iterator.h
  /usr/include/c++/16/bits/stl_iterator_base_funcs.h
  /usr/include/c++/16/bits/stl_iterator_base_types.h
+ /usr/include/c++/16/bits/stl_numeric.h
  /usr/include/c++/16/bits/stl_pair.h
  /usr/include/c++/16/bits/stl_tempbuf.h
  /usr/include/c++/16/bits/stl_uninitialized.h
@@ -268,14 +273,19 @@ CMakeFiles/engineprogramme.dir/engine/engine.cpp.o
  /usr/include/c++/16/locale
  /usr/include/c++/16/new
  /usr/include/c++/16/numbers
+ /usr/include/c++/16/numeric
  /usr/include/c++/16/optional
  /usr/include/c++/16/ostream
+ /usr/include/c++/16/pstl/execution_defs.h
+ /usr/include/c++/16/pstl/glue_numeric_defs.h
  /usr/include/c++/16/pstl/pstl_config.h
+ /usr/include/c++/16/random
  /usr/include/c++/16/ratio
  /usr/include/c++/16/semaphore
  /usr/include/c++/16/span
  /usr/include/c++/16/sstream
  /usr/include/c++/16/stdexcept
+ /usr/include/c++/16/stdlib.h
  /usr/include/c++/16/stop_token
  /usr/include/c++/16/streambuf
  /usr/include/c++/16/string
@@ -296,6 +306,7 @@ CMakeFiles/engineprogramme.dir/engine/engine.cpp.o
  /usr/include/c++/16/tr1/special_function_util.h
  /usr/include/c++/16/tuple
  /usr/include/c++/16/type_traits
+ /usr/include/c++/16/typeindex
  /usr/include/c++/16/typeinfo
  /usr/include/c++/16/unordered_map
  /usr/include/c++/16/vector
@@ -310,6 +321,7 @@ CMakeFiles/engineprogramme.dir/engine/engine.cpp.o
  /usr/include/c++/16/x86_64-pc-linux-gnu/bits/gthr-default.h
  /usr/include/c++/16/x86_64-pc-linux-gnu/bits/gthr.h
  /usr/include/c++/16/x86_64-pc-linux-gnu/bits/messages_members.h
+ /usr/include/c++/16/x86_64-pc-linux-gnu/bits/opt_random.h
  /usr/include/c++/16/x86_64-pc-linux-gnu/bits/os_defines.h
  /usr/include/c++/16/x86_64-pc-linux-gnu/bits/time_members.h
  /usr/include/ctype.h
@@ -352,9 +364,15 @@ CMakeFiles/engineprogramme.dir/engine/engine.cpp.o
  /usr/include/unistd.h
  /usr/include/wchar.h
  /usr/include/wctype.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/emmintrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/mm_malloc.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/mmintrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/mwaitintrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/pmmintrin.h
  /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/stdarg.h
  /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/stddef.h
  /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/stdint.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/xmmintrin.h
 
 CMakeFiles/engineprogramme.dir/home/safoan/Desktop/localproj/metalrend/graphicsapi/graphicsapi.cpp.o
  /home/safoan/Desktop/localproj/metalrend/graphicsapi/graphicsapi.cpp
@@ -405,7 +423,9 @@ CMakeFiles/engineprogramme.dir/home/safoan/Desktop/localproj/metalrend/graphicsa
  /usr/include/bits/select.h
  /usr/include/bits/setjmp.h
  /usr/include/bits/stdint-intn.h
+ /usr/include/bits/stdio.h
  /usr/include/bits/stdio_lim.h
+ /usr/include/bits/stdlib-bsearch.h
  /usr/include/bits/stdlib-float.h
  /usr/include/bits/struct_mutex.h
  /usr/include/bits/struct_rwlock.h
@@ -691,7 +711,9 @@ CMakeFiles/engineprogramme.dir/raycasting/raycast.cpp.o
  /usr/include/bits/stdint-intn.h
  /usr/include/bits/stdint-least.h
  /usr/include/bits/stdint-uintn.h
+ /usr/include/bits/stdio.h
  /usr/include/bits/stdio_lim.h
+ /usr/include/bits/stdlib-bsearch.h
  /usr/include/bits/stdlib-float.h
  /usr/include/bits/struct_mutex.h
  /usr/include/bits/struct_rwlock.h
@@ -887,6 +909,7 @@ CMakeFiles/engineprogramme.dir/raycasting/raycast.cpp.o
  /usr/include/c++/16/tr1/special_function_util.h
  /usr/include/c++/16/tuple
  /usr/include/c++/16/type_traits
+ /usr/include/c++/16/typeindex
  /usr/include/c++/16/typeinfo
  /usr/include/c++/16/unordered_map
  /usr/include/c++/16/utility
@@ -1020,7 +1043,9 @@ CMakeFiles/engineprogramme.dir/rendering/render.cpp.o
  /usr/include/bits/stdint-intn.h
  /usr/include/bits/stdint-least.h
  /usr/include/bits/stdint-uintn.h
+ /usr/include/bits/stdio.h
  /usr/include/bits/stdio_lim.h
+ /usr/include/bits/stdlib-bsearch.h
  /usr/include/bits/stdlib-float.h
  /usr/include/bits/struct_mutex.h
  /usr/include/bits/struct_rwlock.h
@@ -1231,6 +1256,7 @@ CMakeFiles/engineprogramme.dir/rendering/render.cpp.o
  /usr/include/c++/16/tr1/special_function_util.h
  /usr/include/c++/16/tuple
  /usr/include/c++/16/type_traits
+ /usr/include/c++/16/typeindex
  /usr/include/c++/16/typeinfo
  /usr/include/c++/16/unordered_map
  /usr/include/c++/16/vector
@@ -1295,8 +1321,8 @@ CMakeFiles/engineprogramme.dir/rendering/render.cpp.o
  /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/stdint.h
  /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/xmmintrin.h
 
-CMakeFiles/engineprogramme.dir/testing/enginetest.cpp.o
- /home/safoan/Desktop/localproj/metalrend/engine/gameengine/testing/enginetest.cpp
+CMakeFiles/engineprogramme.dir/testing/fps.cpp.o
+ /home/safoan/Desktop/localproj/metalrend/engine/gameengine/testing/fps.cpp
  /home/safoan/Desktop/localproj/metalrend/graphicsapi/graphicsapi.h
  /home/safoan/Desktop/localproj/metalrend/graphicsapi/vectr.h
  /home/safoan/Desktop/localproj/metalrend/engine/gameengine/input/input.h
@@ -1306,6 +1332,7 @@ CMakeFiles/engineprogramme.dir/testing/enginetest.cpp.o
  /home/safoan/Desktop/localproj/metalrend/engine/gameengine/objects/object.h
  /home/safoan/Desktop/localproj/metalrend/engine/gameengine/rendering/camera.h
  /home/safoan/Desktop/localproj/metalrend/engine/gameengine/engine/engine.h
+ /home/safoan/Desktop/localproj/metalrend/engine/gameengine/libs/miniaud/miniaudio.h
  /home/safoan/Desktop/localproj/metalrend/engine/gameengine/math/trighelper.h
  /home/safoan/Desktop/localproj/metalrend/engine/gameengine/objects/listobjects.h
  /home/safoan/Desktop/localproj/metalrend/engine/gameengine/objects/transformation.h
@@ -1329,15 +1356,19 @@ CMakeFiles/engineprogramme.dir/testing/enginetest.cpp.o
  /usr/include/asm/posix_types_64.h
  /usr/include/asm/sockios.h
  /usr/include/asm/types.h
+ /usr/include/assert.h
  /usr/include/bits/atomic_wide_counter.h
  /usr/include/bits/byteswap.h
  /usr/include/bits/cloexec.h
  /usr/include/bits/confname.h
  /usr/include/bits/cpu-set.h
+ /usr/include/bits/dl_find_object.h
+ /usr/include/bits/dlfcn.h
  /usr/include/bits/endian.h
  /usr/include/bits/endianness.h
  /usr/include/bits/environments.h
  /usr/include/bits/errno.h
+ /usr/include/bits/eventfd.h
  /usr/include/bits/fcntl-linux.h
  /usr/include/bits/fcntl.h
  /usr/include/bits/floatn-common.h
@@ -1352,6 +1383,7 @@ CMakeFiles/engineprogramme.dir/testing/enginetest.cpp.o
  /usr/include/bits/iscanonical.h
  /usr/include/bits/libc-header-start.h
  /usr/include/bits/libm-simd-decl-stubs.h
+ /usr/include/bits/local_lim.h
  /usr/include/bits/locale.h
  /usr/include/bits/long-double.h
  /usr/include/bits/math-vector.h
@@ -1360,6 +1392,9 @@ CMakeFiles/engineprogramme.dir/testing/enginetest.cpp.o
  /usr/include/bits/mathcalls-narrow.h
  /usr/include/bits/mathcalls.h
  /usr/include/bits/openat2.h
+ /usr/include/bits/poll.h
+ /usr/include/bits/posix1_lim.h
+ /usr/include/bits/posix2_lim.h
  /usr/include/bits/posix_opt.h
  /usr/include/bits/pthread_stack_min-dynamic.h
  /usr/include/bits/pthreadtypes-arch.h
@@ -1368,10 +1403,14 @@ CMakeFiles/engineprogramme.dir/testing/enginetest.cpp.o
  /usr/include/bits/select.h
  /usr/include/bits/setjmp.h
  /usr/include/bits/stat.h
+ /usr/include/bits/statx-generic.h
+ /usr/include/bits/statx.h
  /usr/include/bits/stdint-intn.h
  /usr/include/bits/stdint-least.h
  /usr/include/bits/stdint-uintn.h
+ /usr/include/bits/stdio.h
  /usr/include/bits/stdio_lim.h
+ /usr/include/bits/stdlib-bsearch.h
  /usr/include/bits/stdlib-float.h
  /usr/include/bits/struct_mutex.h
  /usr/include/bits/struct_rwlock.h
@@ -1401,6 +1440,8 @@ CMakeFiles/engineprogramme.dir/testing/enginetest.cpp.o
  /usr/include/bits/types/struct_iovec.h
  /usr/include/bits/types/struct_itimerspec.h
  /usr/include/bits/types/struct_sched_param.h
+ /usr/include/bits/types/struct_statx.h
+ /usr/include/bits/types/struct_statx_timestamp.h
  /usr/include/bits/types/struct_timespec.h
  /usr/include/bits/types/struct_timeval.h
  /usr/include/bits/types/struct_tm.h
@@ -1409,12 +1450,14 @@ CMakeFiles/engineprogramme.dir/testing/enginetest.cpp.o
  /usr/include/bits/types/wint_t.h
  /usr/include/bits/typesizes.h
  /usr/include/bits/uintn-identity.h
+ /usr/include/bits/uio_lim.h
  /usr/include/bits/unistd_ext.h
  /usr/include/bits/waitflags.h
  /usr/include/bits/waitstatus.h
  /usr/include/bits/wchar.h
  /usr/include/bits/wctype-wchar.h
  /usr/include/bits/wordsize.h
+ /usr/include/bits/xopen_lim.h
  /usr/include/c++/16/array
  /usr/include/c++/16/atomic
  /usr/include/c++/16/backward/binders.h
@@ -1448,6 +1491,10 @@ CMakeFiles/engineprogramme.dir/testing/enginetest.cpp.o
  /usr/include/c++/16/bits/exception_defines.h
  /usr/include/c++/16/bits/exception_ptr.h
  /usr/include/c++/16/bits/formatfwd.h
+ /usr/include/c++/16/bits/fs_dir.h
+ /usr/include/c++/16/bits/fs_fwd.h
+ /usr/include/c++/16/bits/fs_ops.h
+ /usr/include/c++/16/bits/fs_path.h
  /usr/include/c++/16/bits/functexcept.h
  /usr/include/c++/16/bits/functional_hash.h
  /usr/include/c++/16/bits/hash_bytes.h
@@ -1484,6 +1531,7 @@ CMakeFiles/engineprogramme.dir/testing/enginetest.cpp.o
  /usr/include/c++/16/bits/postypes.h
  /usr/include/c++/16/bits/predefined_ops.h
  /usr/include/c++/16/bits/ptr_traits.h
+ /usr/include/c++/16/bits/quoted_string.h
  /usr/include/c++/16/bits/range_access.h
  /usr/include/c++/16/bits/ranges_algobase.h
  /usr/include/c++/16/bits/ranges_base.h
@@ -1537,6 +1585,7 @@ CMakeFiles/engineprogramme.dir/testing/enginetest.cpp.o
  /usr/include/c++/16/chrono
  /usr/include/c++/16/clocale
  /usr/include/c++/16/cmath
+ /usr/include/c++/16/codecvt
  /usr/include/c++/16/compare
  /usr/include/c++/16/concepts
  /usr/include/c++/16/cstddef
@@ -1556,9 +1605,11 @@ CMakeFiles/engineprogramme.dir/testing/enginetest.cpp.o
  /usr/include/c++/16/ext/numeric_traits.h
  /usr/include/c++/16/ext/string_conversions.h
  /usr/include/c++/16/ext/type_traits.h
+ /usr/include/c++/16/filesystem
  /usr/include/c++/16/format
  /usr/include/c++/16/functional
  /usr/include/c++/16/initializer_list
+ /usr/include/c++/16/iomanip
  /usr/include/c++/16/ios
  /usr/include/c++/16/iosfwd
  /usr/include/c++/16/iostream
@@ -1566,6 +1617,7 @@ CMakeFiles/engineprogramme.dir/testing/enginetest.cpp.o
  /usr/include/c++/16/limits
  /usr/include/c++/16/list
  /usr/include/c++/16/locale
+ /usr/include/c++/16/math.h
  /usr/include/c++/16/new
  /usr/include/c++/16/numbers
  /usr/include/c++/16/optional
@@ -1576,6 +1628,7 @@ CMakeFiles/engineprogramme.dir/testing/enginetest.cpp.o
  /usr/include/c++/16/span
  /usr/include/c++/16/sstream
  /usr/include/c++/16/stdexcept
+ /usr/include/c++/16/stdlib.h
  /usr/include/c++/16/stop_token
  /usr/include/c++/16/streambuf
  /usr/include/c++/16/string
@@ -1596,6 +1649,7 @@ CMakeFiles/engineprogramme.dir/testing/enginetest.cpp.o
  /usr/include/c++/16/tr1/special_function_util.h
  /usr/include/c++/16/tuple
  /usr/include/c++/16/type_traits
+ /usr/include/c++/16/typeindex
  /usr/include/c++/16/typeinfo
  /usr/include/c++/16/unordered_map
  /usr/include/c++/16/vector
@@ -1613,6 +1667,7 @@ CMakeFiles/engineprogramme.dir/testing/enginetest.cpp.o
  /usr/include/c++/16/x86_64-pc-linux-gnu/bits/os_defines.h
  /usr/include/c++/16/x86_64-pc-linux-gnu/bits/time_members.h
  /usr/include/ctype.h
+ /usr/include/dlfcn.h
  /usr/include/endian.h
  /usr/include/errno.h
  /usr/include/fcntl.h
@@ -1621,30 +1676,39 @@ CMakeFiles/engineprogramme.dir/testing/enginetest.cpp.o
  /usr/include/gnu/stubs-64.h
  /usr/include/gnu/stubs.h
  /usr/include/libintl.h
+ /usr/include/limits.h
  /usr/include/linux/close_range.h
  /usr/include/linux/errno.h
  /usr/include/linux/falloc.h
  /usr/include/linux/input-event-codes.h
  /usr/include/linux/input.h
  /usr/include/linux/ioctl.h
+ /usr/include/linux/limits.h
  /usr/include/linux/openat2.h
  /usr/include/linux/posix_types.h
  /usr/include/linux/sched/types.h
  /usr/include/linux/sockios.h
+ /usr/include/linux/stat.h
  /usr/include/linux/stddef.h
  /usr/include/linux/types.h
  /usr/include/locale.h
  /usr/include/math.h
+ /usr/include/poll.h
  /usr/include/pthread.h
  /usr/include/sched.h
  /usr/include/stdc-predef.h
  /usr/include/stdint.h
  /usr/include/stdio.h
  /usr/include/stdlib.h
+ /usr/include/string.h
+ /usr/include/strings.h
  /usr/include/sys/cdefs.h
+ /usr/include/sys/eventfd.h
  /usr/include/sys/ioctl.h
+ /usr/include/sys/poll.h
  /usr/include/sys/select.h
  /usr/include/sys/single_threaded.h
+ /usr/include/sys/stat.h
  /usr/include/sys/time.h
  /usr/include/sys/ttydefaults.h
  /usr/include/sys/types.h
@@ -1652,9 +1716,120 @@ CMakeFiles/engineprogramme.dir/testing/enginetest.cpp.o
  /usr/include/unistd.h
  /usr/include/wchar.h
  /usr/include/wctype.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/adxintrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/amxavx512intrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/amxbf16intrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/amxcomplexintrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/amxfp16intrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/amxfp8intrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/amxint8intrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/amxmovrsintrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/amxtf32intrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/amxtileintrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/avx10_2bf16intrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/avx10_2convertintrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/avx10_2copyintrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/avx10_2mediaintrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/avx10_2minmaxintrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/avx10_2satcvtintrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/avx2intrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/avx512bf16intrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/avx512bf16vlintrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/avx512bitalgintrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/avx512bitalgvlintrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/avx512bmmintrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/avx512bmmvlintrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/avx512bwintrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/avx512cdintrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/avx512dqintrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/avx512fintrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/avx512fp16intrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/avx512fp16vlintrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/avx512ifmaintrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/avx512ifmavlintrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/avx512vbmi2intrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/avx512vbmi2vlintrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/avx512vbmiintrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/avx512vbmivlintrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/avx512vlbwintrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/avx512vldqintrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/avx512vlintrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/avx512vnniintrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/avx512vnnivlintrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/avx512vp2intersectintrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/avx512vp2intersectvlintrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/avx512vpopcntdqintrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/avx512vpopcntdqvlintrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/avxifmaintrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/avxintrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/avxneconvertintrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/avxvnniint16intrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/avxvnniint8intrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/avxvnniintrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/bmi2intrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/bmiintrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/cetintrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/cldemoteintrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/clflushoptintrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/clwbintrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/clzerointrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/cmpccxaddintrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/emmintrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/enqcmdintrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/f16cintrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/fmaintrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/fxsrintrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/gfniintrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/hresetintrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/ia32intrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/immintrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/keylockerintrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/limits.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/lwpintrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/lzcntintrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/mm_malloc.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/mmintrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/movdirintrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/movrsintrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/mwaitintrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/mwaitxintrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/pconfigintrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/pkuintrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/pmmintrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/popcntintrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/prfchiintrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/prfchwintrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/raointintrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/rdseedintrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/rtmintrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/serializeintrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/sgxintrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/sha512intrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/shaintrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/sm3intrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/sm4intrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/smmintrin.h
  /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/stdarg.h
  /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/stddef.h
  /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/stdint.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/syslimits.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/tbmintrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/tmmintrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/tsxldtrkintrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/uintrintrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/usermsrintrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/vaesintrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/vpclmulqdqintrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/waitpkgintrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/wbnoinvdintrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/wmmintrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/x86gprintrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/xmmintrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/xsavecintrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/xsaveintrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/xsaveoptintrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/xsavesintrin.h
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/xtestintrin.h
 
 engineprogramme
  /usr/lib/Scrt1.o
@@ -1679,5 +1854,5 @@ engineprogramme
  /home/safoan/Desktop/localproj/metalrend/engine/gameengine/build/CMakeFiles/engineprogramme.dir/home/safoan/Desktop/localproj/metalrend/graphicsapi/graphicsapi.cpp.o
  /home/safoan/Desktop/localproj/metalrend/engine/gameengine/build/CMakeFiles/engineprogramme.dir/raycasting/raycast.cpp.o
  /home/safoan/Desktop/localproj/metalrend/engine/gameengine/build/CMakeFiles/engineprogramme.dir/rendering/render.cpp.o
- /home/safoan/Desktop/localproj/metalrend/engine/gameengine/build/CMakeFiles/engineprogramme.dir/testing/enginetest.cpp.o
+ /home/safoan/Desktop/localproj/metalrend/engine/gameengine/build/CMakeFiles/engineprogramme.dir/testing/fps.cpp.o
 

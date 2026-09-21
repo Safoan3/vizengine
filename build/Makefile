@@ -250,29 +250,29 @@ rendering/render.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/rendering/render.cpp.s
 .PHONY : rendering/render.cpp.s
 
-testing/enginetest.o: testing/enginetest.cpp.o
-.PHONY : testing/enginetest.o
+testing/fps.o: testing/fps.cpp.o
+.PHONY : testing/fps.o
 
 # target to build an object file
-testing/enginetest.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/engineprogramme.dir/build.make CMakeFiles/engineprogramme.dir/testing/enginetest.cpp.o
-.PHONY : testing/enginetest.cpp.o
+testing/fps.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/engineprogramme.dir/build.make CMakeFiles/engineprogramme.dir/testing/fps.cpp.o
+.PHONY : testing/fps.cpp.o
 
-testing/enginetest.i: testing/enginetest.cpp.i
-.PHONY : testing/enginetest.i
+testing/fps.i: testing/fps.cpp.i
+.PHONY : testing/fps.i
 
 # target to preprocess a source file
-testing/enginetest.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/engineprogramme.dir/build.make CMakeFiles/engineprogramme.dir/testing/enginetest.cpp.i
-.PHONY : testing/enginetest.cpp.i
+testing/fps.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/engineprogramme.dir/build.make CMakeFiles/engineprogramme.dir/testing/fps.cpp.i
+.PHONY : testing/fps.cpp.i
 
-testing/enginetest.s: testing/enginetest.cpp.s
-.PHONY : testing/enginetest.s
+testing/fps.s: testing/fps.cpp.s
+.PHONY : testing/fps.s
 
 # target to generate assembly for a file
-testing/enginetest.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/engineprogramme.dir/build.make CMakeFiles/engineprogramme.dir/testing/enginetest.cpp.s
-.PHONY : testing/enginetest.cpp.s
+testing/fps.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/engineprogramme.dir/build.make CMakeFiles/engineprogramme.dir/testing/fps.cpp.s
+.PHONY : testing/fps.cpp.s
 
 # Help Target
 help:
@@ -296,9 +296,9 @@ help:
 	@echo "... rendering/render.o"
 	@echo "... rendering/render.i"
 	@echo "... rendering/render.s"
-	@echo "... testing/enginetest.o"
-	@echo "... testing/enginetest.i"
-	@echo "... testing/enginetest.s"
+	@echo "... testing/fps.o"
+	@echo "... testing/fps.i"
+	@echo "... testing/fps.s"
 .PHONY : help
 
 

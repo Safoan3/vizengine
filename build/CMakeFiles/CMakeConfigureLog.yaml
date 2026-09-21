@@ -20,7 +20,6 @@ events:
     names:
       - "uname"
     candidate_directories:
-      - "/home/safoan/.local/share/nvim/mason/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/sbin/"
@@ -35,13 +34,11 @@ events:
       - "/home/safoan/.local/bin/"
       - "/opt/cuda/bin/"
     searched_directories:
-      - "/home/safoan/.local/share/nvim/mason/bin/uname"
       - "/usr/local/sbin/uname"
       - "/usr/local/bin/uname"
     found: "/usr/sbin/uname"
     search_context:
       ENV{PATH}:
-        - "/home/safoan/.local/share/nvim/mason/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -86,7 +83,6 @@ events:
       - "make"
       - "smake"
     candidate_directories:
-      - "/home/safoan/.local/share/nvim/mason/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/sbin/"
@@ -101,7 +97,6 @@ events:
       - "/home/safoan/.local/bin/"
       - "/opt/cuda/bin/"
     searched_directories:
-      - "/home/safoan/.local/share/nvim/mason/bin/gmake"
       - "/usr/local/sbin/gmake"
       - "/usr/local/bin/gmake"
       - "/usr/sbin/gmake"
@@ -115,13 +110,11 @@ events:
       - "/usr/bin/core_perl/gmake"
       - "/home/safoan/.local/bin/gmake"
       - "/opt/cuda/bin/gmake"
-      - "/home/safoan/.local/share/nvim/mason/bin/make"
       - "/usr/local/sbin/make"
       - "/usr/local/bin/make"
     found: "/usr/sbin/make"
     search_context:
       ENV{PATH}:
-        - "/home/safoan/.local/share/nvim/mason/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -164,7 +157,6 @@ events:
       - "icx"
       - "clang"
     candidate_directories:
-      - "/home/safoan/.local/share/nvim/mason/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/sbin/"
@@ -179,13 +171,11 @@ events:
       - "/home/safoan/.local/bin/"
       - "/opt/cuda/bin/"
     searched_directories:
-      - "/home/safoan/.local/share/nvim/mason/bin/cc"
       - "/usr/local/sbin/cc"
       - "/usr/local/bin/cc"
     found: "/usr/sbin/cc"
     search_context:
       ENV{PATH}:
-        - "/home/safoan/.local/share/nvim/mason/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -229,7 +219,6 @@ events:
     found: "/usr/share/cmake/Modules/CMakeCCompilerId.c.in"
     search_context:
       ENV{PATH}:
-        - "/home/safoan/.local/share/nvim/mason/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -289,7 +278,6 @@ events:
       - "ar"
     candidate_directories:
       - "/usr/sbin/"
-      - "/home/safoan/.local/share/nvim/mason/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
@@ -305,7 +293,6 @@ events:
     found: "/usr/sbin/ar"
     search_context:
       ENV{PATH}:
-        - "/home/safoan/.local/share/nvim/mason/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -343,7 +330,6 @@ events:
       - "ranlib"
     candidate_directories:
       - "/usr/sbin/"
-      - "/home/safoan/.local/share/nvim/mason/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
@@ -359,7 +345,6 @@ events:
     found: "/usr/sbin/ranlib"
     search_context:
       ENV{PATH}:
-        - "/home/safoan/.local/share/nvim/mason/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -397,7 +382,6 @@ events:
       - "strip"
     candidate_directories:
       - "/usr/sbin/"
-      - "/home/safoan/.local/share/nvim/mason/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
@@ -413,7 +397,6 @@ events:
     found: "/usr/sbin/strip"
     search_context:
       ENV{PATH}:
-        - "/home/safoan/.local/share/nvim/mason/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -451,7 +434,6 @@ events:
       - "ld"
     candidate_directories:
       - "/usr/sbin/"
-      - "/home/safoan/.local/share/nvim/mason/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
@@ -467,7 +449,6 @@ events:
     found: "/usr/sbin/ld"
     search_context:
       ENV{PATH}:
-        - "/home/safoan/.local/share/nvim/mason/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -505,7 +486,6 @@ events:
       - "nm"
     candidate_directories:
       - "/usr/sbin/"
-      - "/home/safoan/.local/share/nvim/mason/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
@@ -521,7 +501,6 @@ events:
     found: "/usr/sbin/nm"
     search_context:
       ENV{PATH}:
-        - "/home/safoan/.local/share/nvim/mason/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -559,7 +538,6 @@ events:
       - "objdump"
     candidate_directories:
       - "/usr/sbin/"
-      - "/home/safoan/.local/share/nvim/mason/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
@@ -575,7 +553,6 @@ events:
     found: "/usr/sbin/objdump"
     search_context:
       ENV{PATH}:
-        - "/home/safoan/.local/share/nvim/mason/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -613,7 +590,6 @@ events:
       - "objcopy"
     candidate_directories:
       - "/usr/sbin/"
-      - "/home/safoan/.local/share/nvim/mason/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
@@ -629,7 +605,6 @@ events:
     found: "/usr/sbin/objcopy"
     search_context:
       ENV{PATH}:
-        - "/home/safoan/.local/share/nvim/mason/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -667,7 +642,6 @@ events:
       - "readelf"
     candidate_directories:
       - "/usr/sbin/"
-      - "/home/safoan/.local/share/nvim/mason/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
@@ -683,7 +657,6 @@ events:
     found: "/usr/sbin/readelf"
     search_context:
       ENV{PATH}:
-        - "/home/safoan/.local/share/nvim/mason/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -721,7 +694,6 @@ events:
       - "dlltool"
     candidate_directories:
       - "/usr/sbin/"
-      - "/home/safoan/.local/share/nvim/mason/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
@@ -736,7 +708,6 @@ events:
       - "/opt/cuda/bin/"
     searched_directories:
       - "/usr/sbin/dlltool"
-      - "/home/safoan/.local/share/nvim/mason/bin/dlltool"
       - "/usr/local/sbin/dlltool"
       - "/usr/local/bin/dlltool"
       - "/usr/bin/dlltool"
@@ -752,7 +723,6 @@ events:
     found: false
     search_context:
       ENV{PATH}:
-        - "/home/safoan/.local/share/nvim/mason/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -790,7 +760,6 @@ events:
       - "addr2line"
     candidate_directories:
       - "/usr/sbin/"
-      - "/home/safoan/.local/share/nvim/mason/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
@@ -806,7 +775,6 @@ events:
     found: "/usr/sbin/addr2line"
     search_context:
       ENV{PATH}:
-        - "/home/safoan/.local/share/nvim/mason/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -844,7 +812,6 @@ events:
       - "tapi"
     candidate_directories:
       - "/usr/sbin/"
-      - "/home/safoan/.local/share/nvim/mason/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
@@ -859,7 +826,6 @@ events:
       - "/opt/cuda/bin/"
     searched_directories:
       - "/usr/sbin/tapi"
-      - "/home/safoan/.local/share/nvim/mason/bin/tapi"
       - "/usr/local/sbin/tapi"
       - "/usr/local/bin/tapi"
       - "/usr/bin/tapi"
@@ -875,7 +841,6 @@ events:
     found: false
     search_context:
       ENV{PATH}:
-        - "/home/safoan/.local/share/nvim/mason/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -916,7 +881,6 @@ events:
       - "gcc-ar"
     candidate_directories:
       - "/usr/sbin/"
-      - "/home/safoan/.local/share/nvim/mason/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
@@ -931,7 +895,6 @@ events:
       - "/opt/cuda/bin/"
     searched_directories:
       - "/usr/sbin/gcc-ar-16.2"
-      - "/home/safoan/.local/share/nvim/mason/bin/gcc-ar-16.2"
       - "/usr/local/sbin/gcc-ar-16.2"
       - "/usr/local/bin/gcc-ar-16.2"
       - "/usr/bin/gcc-ar-16.2"
@@ -945,7 +908,6 @@ events:
       - "/home/safoan/.local/bin/gcc-ar-16.2"
       - "/opt/cuda/bin/gcc-ar-16.2"
       - "/usr/sbin/gcc-ar-16"
-      - "/home/safoan/.local/share/nvim/mason/bin/gcc-ar-16"
       - "/usr/local/sbin/gcc-ar-16"
       - "/usr/local/bin/gcc-ar-16"
       - "/usr/bin/gcc-ar-16"
@@ -959,7 +921,6 @@ events:
       - "/home/safoan/.local/bin/gcc-ar-16"
       - "/opt/cuda/bin/gcc-ar-16"
       - "/usr/sbin/gcc-ar16"
-      - "/home/safoan/.local/share/nvim/mason/bin/gcc-ar16"
       - "/usr/local/sbin/gcc-ar16"
       - "/usr/local/bin/gcc-ar16"
       - "/usr/bin/gcc-ar16"
@@ -975,7 +936,6 @@ events:
     found: "/usr/sbin/gcc-ar"
     search_context:
       ENV{PATH}:
-        - "/home/safoan/.local/share/nvim/mason/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -1016,7 +976,6 @@ events:
       - "gcc-ranlib"
     candidate_directories:
       - "/usr/sbin/"
-      - "/home/safoan/.local/share/nvim/mason/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
@@ -1031,7 +990,6 @@ events:
       - "/opt/cuda/bin/"
     searched_directories:
       - "/usr/sbin/gcc-ranlib-16.2"
-      - "/home/safoan/.local/share/nvim/mason/bin/gcc-ranlib-16.2"
       - "/usr/local/sbin/gcc-ranlib-16.2"
       - "/usr/local/bin/gcc-ranlib-16.2"
       - "/usr/bin/gcc-ranlib-16.2"
@@ -1045,7 +1003,6 @@ events:
       - "/home/safoan/.local/bin/gcc-ranlib-16.2"
       - "/opt/cuda/bin/gcc-ranlib-16.2"
       - "/usr/sbin/gcc-ranlib-16"
-      - "/home/safoan/.local/share/nvim/mason/bin/gcc-ranlib-16"
       - "/usr/local/sbin/gcc-ranlib-16"
       - "/usr/local/bin/gcc-ranlib-16"
       - "/usr/bin/gcc-ranlib-16"
@@ -1059,7 +1016,6 @@ events:
       - "/home/safoan/.local/bin/gcc-ranlib-16"
       - "/opt/cuda/bin/gcc-ranlib-16"
       - "/usr/sbin/gcc-ranlib16"
-      - "/home/safoan/.local/share/nvim/mason/bin/gcc-ranlib16"
       - "/usr/local/sbin/gcc-ranlib16"
       - "/usr/local/bin/gcc-ranlib16"
       - "/usr/bin/gcc-ranlib16"
@@ -1075,7 +1031,6 @@ events:
     found: "/usr/sbin/gcc-ranlib"
     search_context:
       ENV{PATH}:
-        - "/home/safoan/.local/share/nvim/mason/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -1125,7 +1080,6 @@ events:
     found: "/usr/sbin/c++"
     search_context:
       ENV{PATH}:
-        - "/home/safoan/.local/share/nvim/mason/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -1169,7 +1123,6 @@ events:
     found: "/usr/share/cmake/Modules/CMakeCXXCompilerId.cpp.in"
     search_context:
       ENV{PATH}:
-        - "/home/safoan/.local/share/nvim/mason/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -1232,7 +1185,6 @@ events:
       - "gcc-ar"
     candidate_directories:
       - "/usr/sbin/"
-      - "/home/safoan/.local/share/nvim/mason/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
@@ -1247,7 +1199,6 @@ events:
       - "/opt/cuda/bin/"
     searched_directories:
       - "/usr/sbin/gcc-ar-16.2"
-      - "/home/safoan/.local/share/nvim/mason/bin/gcc-ar-16.2"
       - "/usr/local/sbin/gcc-ar-16.2"
       - "/usr/local/bin/gcc-ar-16.2"
       - "/usr/bin/gcc-ar-16.2"
@@ -1261,7 +1212,6 @@ events:
       - "/home/safoan/.local/bin/gcc-ar-16.2"
       - "/opt/cuda/bin/gcc-ar-16.2"
       - "/usr/sbin/gcc-ar-16"
-      - "/home/safoan/.local/share/nvim/mason/bin/gcc-ar-16"
       - "/usr/local/sbin/gcc-ar-16"
       - "/usr/local/bin/gcc-ar-16"
       - "/usr/bin/gcc-ar-16"
@@ -1275,7 +1225,6 @@ events:
       - "/home/safoan/.local/bin/gcc-ar-16"
       - "/opt/cuda/bin/gcc-ar-16"
       - "/usr/sbin/gcc-ar16"
-      - "/home/safoan/.local/share/nvim/mason/bin/gcc-ar16"
       - "/usr/local/sbin/gcc-ar16"
       - "/usr/local/bin/gcc-ar16"
       - "/usr/bin/gcc-ar16"
@@ -1291,7 +1240,6 @@ events:
     found: "/usr/sbin/gcc-ar"
     search_context:
       ENV{PATH}:
-        - "/home/safoan/.local/share/nvim/mason/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -1332,7 +1280,6 @@ events:
       - "gcc-ranlib"
     candidate_directories:
       - "/usr/sbin/"
-      - "/home/safoan/.local/share/nvim/mason/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
@@ -1347,7 +1294,6 @@ events:
       - "/opt/cuda/bin/"
     searched_directories:
       - "/usr/sbin/gcc-ranlib-16.2"
-      - "/home/safoan/.local/share/nvim/mason/bin/gcc-ranlib-16.2"
       - "/usr/local/sbin/gcc-ranlib-16.2"
       - "/usr/local/bin/gcc-ranlib-16.2"
       - "/usr/bin/gcc-ranlib-16.2"
@@ -1361,7 +1307,6 @@ events:
       - "/home/safoan/.local/bin/gcc-ranlib-16.2"
       - "/opt/cuda/bin/gcc-ranlib-16.2"
       - "/usr/sbin/gcc-ranlib-16"
-      - "/home/safoan/.local/share/nvim/mason/bin/gcc-ranlib-16"
       - "/usr/local/sbin/gcc-ranlib-16"
       - "/usr/local/bin/gcc-ranlib-16"
       - "/usr/bin/gcc-ranlib-16"
@@ -1375,7 +1320,6 @@ events:
       - "/home/safoan/.local/bin/gcc-ranlib-16"
       - "/opt/cuda/bin/gcc-ranlib-16"
       - "/usr/sbin/gcc-ranlib16"
-      - "/home/safoan/.local/share/nvim/mason/bin/gcc-ranlib16"
       - "/usr/local/sbin/gcc-ranlib16"
       - "/usr/local/bin/gcc-ranlib16"
       - "/usr/bin/gcc-ranlib16"
@@ -1391,7 +1335,6 @@ events:
     found: "/usr/sbin/gcc-ranlib"
     search_context:
       ENV{PATH}:
-        - "/home/safoan/.local/share/nvim/mason/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -1417,8 +1360,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "/home/safoan/Desktop/localproj/metalrend/engine/gameengine/build/CMakeFiles/CMakeScratch/TryCompile-NDN2rp"
-      binary: "/home/safoan/Desktop/localproj/metalrend/engine/gameengine/build/CMakeFiles/CMakeScratch/TryCompile-NDN2rp"
+      source: "/home/safoan/Desktop/localproj/metalrend/engine/gameengine/build/CMakeFiles/CMakeScratch/TryCompile-xFILI7"
+      binary: "/home/safoan/Desktop/localproj/metalrend/engine/gameengine/build/CMakeFiles/CMakeScratch/TryCompile-xFILI7"
     cmakeVariables:
       CMAKE_CXX_STDLIB_MODULES_JSON: ""
       CMAKE_C_FLAGS: ""
@@ -1428,13 +1371,13 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: false
       stdout: |
-        Change Dir: '/home/safoan/Desktop/localproj/metalrend/engine/gameengine/build/CMakeFiles/CMakeScratch/TryCompile-NDN2rp'
+        Change Dir: '/home/safoan/Desktop/localproj/metalrend/engine/gameengine/build/CMakeFiles/CMakeScratch/TryCompile-xFILI7'
         
-        Run Build Command(s): /usr/sbin/cmake -E env VERBOSE=1 /usr/sbin/make -f Makefile cmTC_8a477/fast
-        /usr/sbin/make  -f CMakeFiles/cmTC_8a477.dir/build.make CMakeFiles/cmTC_8a477.dir/build
-        make[1]: Entering directory '/home/safoan/Desktop/localproj/metalrend/engine/gameengine/build/CMakeFiles/CMakeScratch/TryCompile-NDN2rp'
-        Building C object CMakeFiles/cmTC_8a477.dir/CMakeCCompilerABI.c.o
-        /usr/sbin/cc   -v -o CMakeFiles/cmTC_8a477.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c
+        Run Build Command(s): /usr/sbin/cmake -E env VERBOSE=1 /usr/sbin/make -f Makefile cmTC_728aa/fast
+        /usr/sbin/make  -f CMakeFiles/cmTC_728aa.dir/build.make CMakeFiles/cmTC_728aa.dir/build
+        make[1]: Entering directory '/home/safoan/Desktop/localproj/metalrend/engine/gameengine/build/CMakeFiles/CMakeScratch/TryCompile-xFILI7'
+        Building C object CMakeFiles/cmTC_728aa.dir/CMakeCCompilerABI.c.o
+        /usr/sbin/cc   -v -o CMakeFiles/cmTC_728aa.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c
         Using built-in specs.
         COLLECT_GCC=/usr/sbin/cc
         Target: x86_64-pc-linux-gnu
@@ -1442,8 +1385,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 16.2.1 20260810 (GCC) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_8a477.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_8a477.dir/'
-         /usr/lib/gcc/x86_64-pc-linux-gnu/16/cc1 -quiet -v /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_8a477.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /tmp/cceKEKA2.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_728aa.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_728aa.dir/'
+         /usr/lib/gcc/x86_64-pc-linux-gnu/16/cc1 -quiet -v /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_728aa.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /tmp/cchccnVs.s
         GNU C23 (GCC) version 16.2.1 20260810 (x86_64-pc-linux-gnu)
         	compiled by GNU C version 16.2.1 20260810, GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.4.1, isl version isl-0.28-GMP
         
@@ -1457,14 +1400,14 @@ events:
          /usr/include
         End of search list.
         Compiler executable checksum: a48c0af3a2776f11d2f29c8a4f4a097f
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_8a477.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_8a477.dir/'
-         as -v --64 -o CMakeFiles/cmTC_8a477.dir/CMakeCCompilerABI.c.o /tmp/cceKEKA2.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_728aa.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_728aa.dir/'
+         as -v --64 -o CMakeFiles/cmTC_728aa.dir/CMakeCCompilerABI.c.o /tmp/cchccnVs.s
         GNU assembler version 2.47 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.47
         COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_8a477.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_8a477.dir/CMakeCCompilerABI.c.'
-        Linking C executable cmTC_8a477
-        /usr/sbin/cmake -E cmake_link_script CMakeFiles/cmTC_8a477.dir/link.txt --verbose=1
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_728aa.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_728aa.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_728aa
+        /usr/sbin/cmake -E cmake_link_script CMakeFiles/cmTC_728aa.dir/link.txt --verbose=1
         Using built-in specs.
         COLLECT_GCC=/usr/sbin/cc
         COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper
@@ -1475,14 +1418,14 @@ events:
         gcc version 16.2.1 20260810 (GCC) 
         COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_8a477' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_8a477.'
-         /usr/lib/gcc/x86_64-pc-linux-gnu/16/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper -plugin-opt=-fresolution=/tmp/cctpAr1U.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_8a477 /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_8a477.dir/CMakeCCompilerABI.c.o -lgcc -lgcc_s_asneeded -latomic_asneeded -lc -lgcc -lgcc_s_asneeded /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_728aa' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_728aa.'
+         /usr/lib/gcc/x86_64-pc-linux-gnu/16/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper -plugin-opt=-fresolution=/tmp/cckxgsIn.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_728aa /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_728aa.dir/CMakeCCompilerABI.c.o -lgcc -lgcc_s_asneeded -latomic_asneeded -lc -lgcc -lgcc_s_asneeded /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o
         collect2 version 16.2.1 20260810
-        /usr/sbin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper -plugin-opt=-fresolution=/tmp/cctpAr1U.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_8a477 /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_8a477.dir/CMakeCCompilerABI.c.o -lgcc -lgcc_s_asneeded -latomic_asneeded -lc -lgcc -lgcc_s_asneeded /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o
+        /usr/sbin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper -plugin-opt=-fresolution=/tmp/cckxgsIn.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_728aa /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_728aa.dir/CMakeCCompilerABI.c.o -lgcc -lgcc_s_asneeded -latomic_asneeded -lc -lgcc -lgcc_s_asneeded /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o
         GNU ld (GNU Binutils) 2.47
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_8a477' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_8a477.'
-        /usr/sbin/cc  -v -Wl,-v CMakeFiles/cmTC_8a477.dir/CMakeCCompilerABI.c.o -o cmTC_8a477
-        make[1]: Leaving directory '/home/safoan/Desktop/localproj/metalrend/engine/gameengine/build/CMakeFiles/CMakeScratch/TryCompile-NDN2rp'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_728aa' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_728aa.'
+        /usr/sbin/cc  -v -Wl,-v CMakeFiles/cmTC_728aa.dir/CMakeCCompilerABI.c.o -o cmTC_728aa
+        make[1]: Leaving directory '/home/safoan/Desktop/localproj/metalrend/engine/gameengine/build/CMakeFiles/CMakeScratch/TryCompile-xFILI7'
         
       exitCode: 0
   -
@@ -1515,13 +1458,13 @@ events:
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|wild|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|wild))("|,| |$)]
-        ignore line: [Change Dir: '/home/safoan/Desktop/localproj/metalrend/engine/gameengine/build/CMakeFiles/CMakeScratch/TryCompile-NDN2rp']
+        ignore line: [Change Dir: '/home/safoan/Desktop/localproj/metalrend/engine/gameengine/build/CMakeFiles/CMakeScratch/TryCompile-xFILI7']
         ignore line: []
-        ignore line: [Run Build Command(s): /usr/sbin/cmake -E env VERBOSE=1 /usr/sbin/make -f Makefile cmTC_8a477/fast]
-        ignore line: [/usr/sbin/make  -f CMakeFiles/cmTC_8a477.dir/build.make CMakeFiles/cmTC_8a477.dir/build]
-        ignore line: [make[1]: Entering directory '/home/safoan/Desktop/localproj/metalrend/engine/gameengine/build/CMakeFiles/CMakeScratch/TryCompile-NDN2rp']
-        ignore line: [Building C object CMakeFiles/cmTC_8a477.dir/CMakeCCompilerABI.c.o]
-        ignore line: [/usr/sbin/cc   -v -o CMakeFiles/cmTC_8a477.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [Run Build Command(s): /usr/sbin/cmake -E env VERBOSE=1 /usr/sbin/make -f Makefile cmTC_728aa/fast]
+        ignore line: [/usr/sbin/make  -f CMakeFiles/cmTC_728aa.dir/build.make CMakeFiles/cmTC_728aa.dir/build]
+        ignore line: [make[1]: Entering directory '/home/safoan/Desktop/localproj/metalrend/engine/gameengine/build/CMakeFiles/CMakeScratch/TryCompile-xFILI7']
+        ignore line: [Building C object CMakeFiles/cmTC_728aa.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/sbin/cc   -v -o CMakeFiles/cmTC_728aa.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/sbin/cc]
         ignore line: [Target: x86_64-pc-linux-gnu]
@@ -1529,8 +1472,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 16.2.1 20260810 (GCC) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_8a477.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_8a477.dir/']
-        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/16/cc1 -quiet -v /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_8a477.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /tmp/cceKEKA2.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_728aa.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_728aa.dir/']
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/16/cc1 -quiet -v /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_728aa.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /tmp/cchccnVs.s]
         ignore line: [GNU C23 (GCC) version 16.2.1 20260810 (x86_64-pc-linux-gnu)]
         ignore line: [	compiled by GNU C version 16.2.1 20260810  GMP version 6.3.0  MPFR version 4.2.2  MPC version 1.4.1  isl version isl-0.28-GMP]
         ignore line: []
@@ -1544,14 +1487,14 @@ events:
         ignore line: [ /usr/include]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: a48c0af3a2776f11d2f29c8a4f4a097f]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_8a477.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_8a477.dir/']
-        ignore line: [ as -v --64 -o CMakeFiles/cmTC_8a477.dir/CMakeCCompilerABI.c.o /tmp/cceKEKA2.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_728aa.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_728aa.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_728aa.dir/CMakeCCompilerABI.c.o /tmp/cchccnVs.s]
         ignore line: [GNU assembler version 2.47 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.47]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_8a477.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_8a477.dir/CMakeCCompilerABI.c.']
-        ignore line: [Linking C executable cmTC_8a477]
-        ignore line: [/usr/sbin/cmake -E cmake_link_script CMakeFiles/cmTC_8a477.dir/link.txt --verbose=1]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_728aa.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_728aa.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_728aa]
+        ignore line: [/usr/sbin/cmake -E cmake_link_script CMakeFiles/cmTC_728aa.dir/link.txt --verbose=1]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/sbin/cc]
         ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper]
@@ -1562,13 +1505,13 @@ events:
         ignore line: [gcc version 16.2.1 20260810 (GCC) ]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_8a477' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_8a477.']
-        link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/16/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper -plugin-opt=-fresolution=/tmp/cctpAr1U.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_8a477 /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_8a477.dir/CMakeCCompilerABI.c.o -lgcc -lgcc_s_asneeded -latomic_asneeded -lc -lgcc -lgcc_s_asneeded /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_728aa' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_728aa.']
+        link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/16/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper -plugin-opt=-fresolution=/tmp/cckxgsIn.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_728aa /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_728aa.dir/CMakeCCompilerABI.c.o -lgcc -lgcc_s_asneeded -latomic_asneeded -lc -lgcc -lgcc_s_asneeded /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o]
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/16/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/16/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/tmp/cctpAr1U.res] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/cckxgsIn.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s_asneeded] ==> ignore
           arg [-plugin-opt=-pass-through=-latomic_asneeded] ==> ignore
@@ -1584,7 +1527,7 @@ events:
           arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
           arg [-pie] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_8a477] ==> ignore
+          arg [cmTC_728aa] ==> ignore
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o]
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o]
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o]
@@ -1596,7 +1539,7 @@ events:
           arg [-L/lib] ==> dir [/lib]
           arg [-L/usr/lib] ==> dir [/usr/lib]
           arg [-v] ==> ignore
-          arg [CMakeFiles/cmTC_8a477.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [CMakeFiles/cmTC_728aa.dir/CMakeCCompilerABI.c.o] ==> ignore
           arg [-lgcc] ==> lib [gcc]
           arg [-lgcc_s_asneeded] ==> lib [gcc_s_asneeded]
           arg [-latomic_asneeded] ==> lib [atomic_asneeded]
@@ -1606,9 +1549,9 @@ events:
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o]
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o]
         ignore line: [collect2 version 16.2.1 20260810]
-        link line: [/usr/sbin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper -plugin-opt=-fresolution=/tmp/cctpAr1U.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_8a477 /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_8a477.dir/CMakeCCompilerABI.c.o -lgcc -lgcc_s_asneeded -latomic_asneeded -lc -lgcc -lgcc_s_asneeded /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o] ==> linker [/usr/sbin/ld]
-        link line: [/usr/sbin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper -plugin-opt=-fresolution=/tmp/cctpAr1U.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_8a477 /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_8a477.dir/CMakeCCompilerABI.c.o -lgcc -lgcc_s_asneeded -latomic_asneeded -lc -lgcc -lgcc_s_asneeded /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o] ==> linker architecture flags [-m;elf]
-        ignore line: [/usr/sbin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper -plugin-opt=-fresolution=/tmp/cctpAr1U.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_8a477 /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_8a477.dir/CMakeCCompilerABI.c.o -lgcc -lgcc_s_asneeded -latomic_asneeded -lc -lgcc -lgcc_s_asneeded /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o]
+        link line: [/usr/sbin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper -plugin-opt=-fresolution=/tmp/cckxgsIn.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_728aa /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_728aa.dir/CMakeCCompilerABI.c.o -lgcc -lgcc_s_asneeded -latomic_asneeded -lc -lgcc -lgcc_s_asneeded /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o] ==> linker [/usr/sbin/ld]
+        link line: [/usr/sbin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper -plugin-opt=-fresolution=/tmp/cckxgsIn.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_728aa /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_728aa.dir/CMakeCCompilerABI.c.o -lgcc -lgcc_s_asneeded -latomic_asneeded -lc -lgcc -lgcc_s_asneeded /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o] ==> linker architecture flags [-m;elf]
+        ignore line: [/usr/sbin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper -plugin-opt=-fresolution=/tmp/cckxgsIn.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_728aa /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_728aa.dir/CMakeCCompilerABI.c.o -lgcc -lgcc_s_asneeded -latomic_asneeded -lc -lgcc -lgcc_s_asneeded /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o]
         linker tool for 'C': /usr/sbin/ld -m;elf
         collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o] ==> [/usr/lib/Scrt1.o]
         collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o] ==> [/usr/lib/crti.o]
@@ -1645,8 +1588,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "/home/safoan/Desktop/localproj/metalrend/engine/gameengine/build/CMakeFiles/CMakeScratch/TryCompile-c8fLJw"
-      binary: "/home/safoan/Desktop/localproj/metalrend/engine/gameengine/build/CMakeFiles/CMakeScratch/TryCompile-c8fLJw"
+      source: "/home/safoan/Desktop/localproj/metalrend/engine/gameengine/build/CMakeFiles/CMakeScratch/TryCompile-GaAAmk"
+      binary: "/home/safoan/Desktop/localproj/metalrend/engine/gameengine/build/CMakeFiles/CMakeScratch/TryCompile-GaAAmk"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -1657,13 +1600,13 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: false
       stdout: |
-        Change Dir: '/home/safoan/Desktop/localproj/metalrend/engine/gameengine/build/CMakeFiles/CMakeScratch/TryCompile-c8fLJw'
+        Change Dir: '/home/safoan/Desktop/localproj/metalrend/engine/gameengine/build/CMakeFiles/CMakeScratch/TryCompile-GaAAmk'
         
-        Run Build Command(s): /usr/sbin/cmake -E env VERBOSE=1 /usr/sbin/make -f Makefile cmTC_dc97f/fast
-        /usr/sbin/make  -f CMakeFiles/cmTC_dc97f.dir/build.make CMakeFiles/cmTC_dc97f.dir/build
-        make[1]: Entering directory '/home/safoan/Desktop/localproj/metalrend/engine/gameengine/build/CMakeFiles/CMakeScratch/TryCompile-c8fLJw'
-        Building CXX object CMakeFiles/cmTC_dc97f.dir/CMakeCXXCompilerABI.cpp.o
-        /usr/sbin/c++   -v -o CMakeFiles/cmTC_dc97f.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        Run Build Command(s): /usr/sbin/cmake -E env VERBOSE=1 /usr/sbin/make -f Makefile cmTC_9036e/fast
+        /usr/sbin/make  -f CMakeFiles/cmTC_9036e.dir/build.make CMakeFiles/cmTC_9036e.dir/build
+        make[1]: Entering directory '/home/safoan/Desktop/localproj/metalrend/engine/gameengine/build/CMakeFiles/CMakeScratch/TryCompile-GaAAmk'
+        Building CXX object CMakeFiles/cmTC_9036e.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/sbin/c++   -v -o CMakeFiles/cmTC_9036e.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
         Using built-in specs.
         COLLECT_GCC=/usr/sbin/c++
         Target: x86_64-pc-linux-gnu
@@ -1671,8 +1614,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 16.2.1 20260810 (GCC) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_dc97f.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_dc97f.dir/'
-         /usr/lib/gcc/x86_64-pc-linux-gnu/16/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_dc97f.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/ccy2ZwUh.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_9036e.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_9036e.dir/'
+         /usr/lib/gcc/x86_64-pc-linux-gnu/16/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_9036e.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/ccbkBM6z.s
         GNU C++20 (GCC) version 16.2.1 20260810 (x86_64-pc-linux-gnu)
         	compiled by GNU C version 16.2.1 20260810, GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.4.1, isl version isl-0.28-GMP
         
@@ -1689,14 +1632,14 @@ events:
          /usr/include
         End of search list.
         Compiler executable checksum: 28a31ad65a3474623aa15fc494746870
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_dc97f.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_dc97f.dir/'
-         as -v --64 -o CMakeFiles/cmTC_dc97f.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccy2ZwUh.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_9036e.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_9036e.dir/'
+         as -v --64 -o CMakeFiles/cmTC_9036e.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccbkBM6z.s
         GNU assembler version 2.47 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.47
         COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_dc97f.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_dc97f.dir/CMakeCXXCompilerABI.cpp.'
-        Linking CXX executable cmTC_dc97f
-        /usr/sbin/cmake -E cmake_link_script CMakeFiles/cmTC_dc97f.dir/link.txt --verbose=1
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_9036e.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_9036e.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_9036e
+        /usr/sbin/cmake -E cmake_link_script CMakeFiles/cmTC_9036e.dir/link.txt --verbose=1
         Using built-in specs.
         COLLECT_GCC=/usr/sbin/c++
         COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper
@@ -1707,14 +1650,14 @@ events:
         gcc version 16.2.1 20260810 (GCC) 
         COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_dc97f' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_dc97f.'
-         /usr/lib/gcc/x86_64-pc-linux-gnu/16/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper -plugin-opt=-fresolution=/tmp/ccyjOABU.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_dc97f /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_dc97f.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -latomic_asneeded -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_9036e' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_9036e.'
+         /usr/lib/gcc/x86_64-pc-linux-gnu/16/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper -plugin-opt=-fresolution=/tmp/cc0tD7zt.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_9036e /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_9036e.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -latomic_asneeded -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o
         collect2 version 16.2.1 20260810
-        /usr/sbin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper -plugin-opt=-fresolution=/tmp/ccyjOABU.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_dc97f /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_dc97f.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -latomic_asneeded -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o
+        /usr/sbin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper -plugin-opt=-fresolution=/tmp/cc0tD7zt.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_9036e /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_9036e.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -latomic_asneeded -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o
         GNU ld (GNU Binutils) 2.47
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_dc97f' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_dc97f.'
-        /usr/sbin/c++  -v -Wl,-v CMakeFiles/cmTC_dc97f.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_dc97f
-        make[1]: Leaving directory '/home/safoan/Desktop/localproj/metalrend/engine/gameengine/build/CMakeFiles/CMakeScratch/TryCompile-c8fLJw'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_9036e' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_9036e.'
+        /usr/sbin/c++  -v -Wl,-v CMakeFiles/cmTC_9036e.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_9036e
+        make[1]: Leaving directory '/home/safoan/Desktop/localproj/metalrend/engine/gameengine/build/CMakeFiles/CMakeScratch/TryCompile-GaAAmk'
         
       exitCode: 0
   -
@@ -1753,13 +1696,13 @@ events:
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|wild|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|wild))("|,| |$)]
-        ignore line: [Change Dir: '/home/safoan/Desktop/localproj/metalrend/engine/gameengine/build/CMakeFiles/CMakeScratch/TryCompile-c8fLJw']
+        ignore line: [Change Dir: '/home/safoan/Desktop/localproj/metalrend/engine/gameengine/build/CMakeFiles/CMakeScratch/TryCompile-GaAAmk']
         ignore line: []
-        ignore line: [Run Build Command(s): /usr/sbin/cmake -E env VERBOSE=1 /usr/sbin/make -f Makefile cmTC_dc97f/fast]
-        ignore line: [/usr/sbin/make  -f CMakeFiles/cmTC_dc97f.dir/build.make CMakeFiles/cmTC_dc97f.dir/build]
-        ignore line: [make[1]: Entering directory '/home/safoan/Desktop/localproj/metalrend/engine/gameengine/build/CMakeFiles/CMakeScratch/TryCompile-c8fLJw']
-        ignore line: [Building CXX object CMakeFiles/cmTC_dc97f.dir/CMakeCXXCompilerABI.cpp.o]
-        ignore line: [/usr/sbin/c++   -v -o CMakeFiles/cmTC_dc97f.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Run Build Command(s): /usr/sbin/cmake -E env VERBOSE=1 /usr/sbin/make -f Makefile cmTC_9036e/fast]
+        ignore line: [/usr/sbin/make  -f CMakeFiles/cmTC_9036e.dir/build.make CMakeFiles/cmTC_9036e.dir/build]
+        ignore line: [make[1]: Entering directory '/home/safoan/Desktop/localproj/metalrend/engine/gameengine/build/CMakeFiles/CMakeScratch/TryCompile-GaAAmk']
+        ignore line: [Building CXX object CMakeFiles/cmTC_9036e.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/sbin/c++   -v -o CMakeFiles/cmTC_9036e.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/sbin/c++]
         ignore line: [Target: x86_64-pc-linux-gnu]
@@ -1767,8 +1710,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 16.2.1 20260810 (GCC) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_dc97f.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_dc97f.dir/']
-        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/16/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_dc97f.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/ccy2ZwUh.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_9036e.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_9036e.dir/']
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/16/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_9036e.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/ccbkBM6z.s]
         ignore line: [GNU C++20 (GCC) version 16.2.1 20260810 (x86_64-pc-linux-gnu)]
         ignore line: [	compiled by GNU C version 16.2.1 20260810  GMP version 6.3.0  MPFR version 4.2.2  MPC version 1.4.1  isl version isl-0.28-GMP]
         ignore line: []
@@ -1785,14 +1728,14 @@ events:
         ignore line: [ /usr/include]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: 28a31ad65a3474623aa15fc494746870]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_dc97f.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_dc97f.dir/']
-        ignore line: [ as -v --64 -o CMakeFiles/cmTC_dc97f.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccy2ZwUh.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_9036e.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_9036e.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_9036e.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccbkBM6z.s]
         ignore line: [GNU assembler version 2.47 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.47]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_dc97f.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_dc97f.dir/CMakeCXXCompilerABI.cpp.']
-        ignore line: [Linking CXX executable cmTC_dc97f]
-        ignore line: [/usr/sbin/cmake -E cmake_link_script CMakeFiles/cmTC_dc97f.dir/link.txt --verbose=1]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_9036e.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_9036e.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_9036e]
+        ignore line: [/usr/sbin/cmake -E cmake_link_script CMakeFiles/cmTC_9036e.dir/link.txt --verbose=1]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/sbin/c++]
         ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper]
@@ -1803,13 +1746,13 @@ events:
         ignore line: [gcc version 16.2.1 20260810 (GCC) ]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_dc97f' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_dc97f.']
-        link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/16/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper -plugin-opt=-fresolution=/tmp/ccyjOABU.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_dc97f /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_dc97f.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -latomic_asneeded -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_9036e' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_9036e.']
+        link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/16/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper -plugin-opt=-fresolution=/tmp/cc0tD7zt.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_9036e /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_9036e.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -latomic_asneeded -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o]
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/16/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/16/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/tmp/ccyjOABU.res] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/cc0tD7zt.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-latomic_asneeded] ==> ignore
@@ -1825,7 +1768,7 @@ events:
           arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
           arg [-pie] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_dc97f] ==> ignore
+          arg [cmTC_9036e] ==> ignore
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o]
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o]
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o]
@@ -1837,7 +1780,7 @@ events:
           arg [-L/lib] ==> dir [/lib]
           arg [-L/usr/lib] ==> dir [/usr/lib]
           arg [-v] ==> ignore
-          arg [CMakeFiles/cmTC_dc97f.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [CMakeFiles/cmTC_9036e.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
           arg [-lstdc++] ==> lib [stdc++]
           arg [-lm] ==> lib [m]
           arg [-lgcc_s] ==> lib [gcc_s]
@@ -1849,9 +1792,9 @@ events:
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o]
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o]
         ignore line: [collect2 version 16.2.1 20260810]
-        link line: [/usr/sbin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper -plugin-opt=-fresolution=/tmp/ccyjOABU.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_dc97f /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_dc97f.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -latomic_asneeded -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o] ==> linker [/usr/sbin/ld]
-        link line: [/usr/sbin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper -plugin-opt=-fresolution=/tmp/ccyjOABU.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_dc97f /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_dc97f.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -latomic_asneeded -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o] ==> linker architecture flags [-m;elf]
-        ignore line: [/usr/sbin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper -plugin-opt=-fresolution=/tmp/ccyjOABU.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_dc97f /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_dc97f.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -latomic_asneeded -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o]
+        link line: [/usr/sbin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper -plugin-opt=-fresolution=/tmp/cc0tD7zt.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_9036e /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_9036e.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -latomic_asneeded -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o] ==> linker [/usr/sbin/ld]
+        link line: [/usr/sbin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper -plugin-opt=-fresolution=/tmp/cc0tD7zt.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_9036e /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_9036e.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -latomic_asneeded -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o] ==> linker architecture flags [-m;elf]
+        ignore line: [/usr/sbin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper -plugin-opt=-fresolution=/tmp/cc0tD7zt.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_9036e /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_9036e.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -latomic_asneeded -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o]
         linker tool for 'CXX': /usr/sbin/ld -m;elf
         collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o] ==> [/usr/lib/Scrt1.o]
         collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o] ==> [/usr/lib/crti.o]

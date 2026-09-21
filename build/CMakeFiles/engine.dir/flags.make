@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -I/home/safoan/Desktop/localproj/metalrend/engine/gameengine/./engine -I/home/safoan/Desktop/localproj/metalrend/engine/gameengine/./raycasting -I/home/safoan/Desktop/localproj/metalrend/engine/gameengine/./rendering -I/home/safoan/Desktop/localproj/metalrend/engine/gameengine/../../graphicsapi -I/home/safoan/Desktop/localproj/metalrend/engine/gameengine/. -I/home/safoan/Desktop/localproj/metalrend/engine/gameengine/./objects -I/home/safoan/Desktop/localproj/metalrend/engine/gameengine/./math -I/home/safoan/Desktop/localproj/metalrend/engine/gameengine/./libs/imgloader -I/home/safoan/Desktop/localproj/metalrend/engine/gameengine/./libs/miniaud
 
-CXX_FLAGS = -g -O0 -march=native
+CXX_FLAGS = -O2 -march=native
 

@@ -59,7 +59,7 @@ inputData *newData = new inputData;
 float camspeed = 10.5f;
 
 void spawnCube(vec3df pos) {
-  object *Donut = list_objs::createCubeTrigangle(pos, 1.0f);
+  instanceTypes::basepart *Donut = list_objs::createCubeTrigangle(pos, 1.0f);
 
   Donut->scale = {1, 1, 1};
   Donut->col3 = {1.0f, 0.5f, 0.5f, 0.5f, 0.0f};
@@ -67,11 +67,11 @@ void spawnCube(vec3df pos) {
   transformation::scale(Donut);
   transformation::rotate(Donut);
 
-  newEngine.objects.push_back(Donut);
+  newEngine.instances.push_back(Donut);
 }
 
 void shoot() {
-  object *Donut = list_objs::createTriangleSphere(
+  instanceTypes::basepart *Donut = list_objs::createTriangleSphere(
       cam.position + (cam.direction * 1.0f), 0.1f, 1);
   //  Donut->scale = {10, 1, 1};
 
@@ -80,17 +80,20 @@ void shoot() {
   raycast::result res =
       raycast::raycastEnj(newEngine, cam.position, cam.direction);
 
-  newEngine.objects.push_back(Donut);
+  newEngine.instances.push_back(Donut);
 
   if (res.hit == true) {
     Donut->position = res.hitpos;
   }
 }
 
-object *ReferenceSphere = list_objs::createTriangleSphere({0, 5, 0}, 0.4f, 1);
+instanceTypes::basepart *ReferenceSphere =
+    list_objs::createTriangleSphere({0, 5, 0}, 0.4f, 1);
 
-object *Donut = list_objs::createCubeTrigangle({0, 0, 0}, 1.0f);
-object *Triangle = list_objs::createTriangle({-10.0f, 10, 10.0f}, 123.2f);
+instanceTypes::basepart *Donut =
+    list_objs::createCubeTrigangle({0, 0, 0}, 1.0f);
+instanceTypes::basepart *Triangle =
+    list_objs::createTriangle({-10.0f, 10, 10.0f}, 123.2f);
 
 vec3df donutPos = {0, 0, 0};
 
@@ -182,23 +185,15 @@ int main() {
   cam.position = cam.position - cam.direction * 1.0f;
 
   // object *Donut = list_objs::createDonut({0, 0, 0}, 2.0f, 0.8f, 85, 85);
-
-  object *plate = list_objs::createSphere({0, -3.5f, 0}, 1.0f, 1);
-
-  plate->col3 = {1.0f, 1.0f, 1.0f, 0.5f, 1.0f};
-
-  transformation::rotate(plate);
-
   transformation::rotate(Triangle);
 
-  newEngine.objects.push_back(ReferenceSphere);
+  newEngine.instances.push_back(ReferenceSphere);
 
-  newEngine.objects.push_back(plate);
-  newEngine.objects.push_back(Triangle);
+  newEngine.instances.push_back(Triangle);
 
   float step = 0.0f;
 
-  newEngine.objects.push_back(Donut);
+  newEngine.instances.push_back(Donut);
   newEngine.env->listC.clear();
   newEngine.env->listC.push_back({"██"});
 
@@ -208,6 +203,17 @@ int main() {
   //  inputT.detach();
   int frame = 0;
   float dt = 1.0f;
+
+  // hiearchy test
+
+  instanceTypes::group *gunModel1 = new instanceTypes::group();
+  gunModel1->name = "gun";
+
+  instanceTypes::basepart *barrel1 = new instanceTypes::basepart();
+  barrel1->name = "barrel";
+  barrel1->setParent(gunModel1);
+
+  newEngine.instances.push_back(gunModel1);
 
   while (true) {
     step = step + 0.015f * delta;

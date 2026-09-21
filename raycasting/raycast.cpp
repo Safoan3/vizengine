@@ -71,21 +71,22 @@ raycast::result raycast::raycastEnj(enj &enjine, vec3df origin, vec3df dir) {
   std::pair<raycast::result, float> Prev;
   Prev.second = INFINITY;
 
-  for (object *ob : enjine.objects) {
-    if (ob != nullptr) {
-      for (int i = 0; i + 2 < ob->edges.size(); i = i + 3) {
-        vec3df vert1 = ob->vertices[ob->edges[i]] + ob->position;
-        vec3df vert2 = ob->vertices[ob->edges[i + 1]] + ob->position;
-        vec3df vert3 = ob->vertices[ob->edges[i + 2]] + ob->position;
+  for (instance *ob : enjine.typeinstances[typeid(instanceTypes::basepart)]) {
+    if (auto *pt = dynamic_cast<instanceTypes::basepart *>(ob)) {
+
+      for (int i = 0; i + 2 < pt->edges.size(); i = i + 3) {
+        vec3df vert1 = pt->vertices[pt->edges[i]] + pt->position;
+        vec3df vert2 = pt->vertices[pt->edges[i + 1]] + pt->position;
+        vec3df vert3 = pt->vertices[pt->edges[i + 2]] + pt->position;
 
         raycast::result result =
             raycast::lowCast(origin, dir, vert1, vert2, vert3);
 
         if (result.hit == true) {
           if (result.distance < Prev.second) {
-            result.r = ob->col3.r;
-            result.g = ob->col3.g;
-            result.b = ob->col3.b;
+            result.r = pt->col3.r;
+            result.g = pt->col3.g;
+            result.b = pt->col3.b;
 
             Prev.first = result;
             Prev.second = result.distance;

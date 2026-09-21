@@ -128,19 +128,19 @@ CMakeFiles/engineprogramme.dir/home/safoan/Desktop/localproj/metalrend/graphicsa
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/engineprogramme.dir/home/safoan/Desktop/localproj/metalrend/graphicsapi/graphicsapi.cpp.s"
 	/usr/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/safoan/Desktop/localproj/metalrend/graphicsapi/graphicsapi.cpp -o CMakeFiles/engineprogramme.dir/home/safoan/Desktop/localproj/metalrend/graphicsapi/graphicsapi.cpp.s
 
-CMakeFiles/engineprogramme.dir/testing/enginetest.cpp.o: CMakeFiles/engineprogramme.dir/flags.make
-CMakeFiles/engineprogramme.dir/testing/enginetest.cpp.o: /home/safoan/Desktop/localproj/metalrend/engine/gameengine/testing/enginetest.cpp
-CMakeFiles/engineprogramme.dir/testing/enginetest.cpp.o: CMakeFiles/engineprogramme.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/safoan/Desktop/localproj/metalrend/engine/gameengine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/engineprogramme.dir/testing/enginetest.cpp.o"
-	/usr/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/engineprogramme.dir/testing/enginetest.cpp.o -MF CMakeFiles/engineprogramme.dir/testing/enginetest.cpp.o.d -o CMakeFiles/engineprogramme.dir/testing/enginetest.cpp.o -c /home/safoan/Desktop/localproj/metalrend/engine/gameengine/testing/enginetest.cpp
+CMakeFiles/engineprogramme.dir/testing/fps.cpp.o: CMakeFiles/engineprogramme.dir/flags.make
+CMakeFiles/engineprogramme.dir/testing/fps.cpp.o: /home/safoan/Desktop/localproj/metalrend/engine/gameengine/testing/fps.cpp
+CMakeFiles/engineprogramme.dir/testing/fps.cpp.o: CMakeFiles/engineprogramme.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/safoan/Desktop/localproj/metalrend/engine/gameengine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/engineprogramme.dir/testing/fps.cpp.o"
+	/usr/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/engineprogramme.dir/testing/fps.cpp.o -MF CMakeFiles/engineprogramme.dir/testing/fps.cpp.o.d -o CMakeFiles/engineprogramme.dir/testing/fps.cpp.o -c /home/safoan/Desktop/localproj/metalrend/engine/gameengine/testing/fps.cpp
 
-CMakeFiles/engineprogramme.dir/testing/enginetest.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/engineprogramme.dir/testing/enginetest.cpp.i"
-	/usr/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/safoan/Desktop/localproj/metalrend/engine/gameengine/testing/enginetest.cpp > CMakeFiles/engineprogramme.dir/testing/enginetest.cpp.i
+CMakeFiles/engineprogramme.dir/testing/fps.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/engineprogramme.dir/testing/fps.cpp.i"
+	/usr/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/safoan/Desktop/localproj/metalrend/engine/gameengine/testing/fps.cpp > CMakeFiles/engineprogramme.dir/testing/fps.cpp.i
 
-CMakeFiles/engineprogramme.dir/testing/enginetest.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/engineprogramme.dir/testing/enginetest.cpp.s"
-	/usr/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/safoan/Desktop/localproj/metalrend/engine/gameengine/testing/enginetest.cpp -o CMakeFiles/engineprogramme.dir/testing/enginetest.cpp.s
+CMakeFiles/engineprogramme.dir/testing/fps.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/engineprogramme.dir/testing/fps.cpp.s"
+	/usr/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/safoan/Desktop/localproj/metalrend/engine/gameengine/testing/fps.cpp -o CMakeFiles/engineprogramme.dir/testing/fps.cpp.s
 
 # Object files for target engineprogramme
 engineprogramme_OBJECTS = \
@@ -148,7 +148,7 @@ engineprogramme_OBJECTS = \
 "CMakeFiles/engineprogramme.dir/raycasting/raycast.cpp.o" \
 "CMakeFiles/engineprogramme.dir/rendering/render.cpp.o" \
 "CMakeFiles/engineprogramme.dir/home/safoan/Desktop/localproj/metalrend/graphicsapi/graphicsapi.cpp.o" \
-"CMakeFiles/engineprogramme.dir/testing/enginetest.cpp.o"
+"CMakeFiles/engineprogramme.dir/testing/fps.cpp.o"
 
 # External object files for target engineprogramme
 engineprogramme_EXTERNAL_OBJECTS =
@@ -157,7 +157,7 @@ engineprogramme: CMakeFiles/engineprogramme.dir/engine/engine.cpp.o
 engineprogramme: CMakeFiles/engineprogramme.dir/raycasting/raycast.cpp.o
 engineprogramme: CMakeFiles/engineprogramme.dir/rendering/render.cpp.o
 engineprogramme: CMakeFiles/engineprogramme.dir/home/safoan/Desktop/localproj/metalrend/graphicsapi/graphicsapi.cpp.o
-engineprogramme: CMakeFiles/engineprogramme.dir/testing/enginetest.cpp.o
+engineprogramme: CMakeFiles/engineprogramme.dir/testing/fps.cpp.o
 engineprogramme: CMakeFiles/engineprogramme.dir/build.make
 engineprogramme: CMakeFiles/engineprogramme.dir/compiler_depend.ts
 engineprogramme: CMakeFiles/engineprogramme.dir/link.txt

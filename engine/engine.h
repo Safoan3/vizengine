@@ -10,6 +10,10 @@
 #include <thread>
 #include <vector>
 
+#include <typeindex>
+#include <typeinfo>
+#include <unordered_map>
+
 enum inputMethods {
   linuxlts,
   glfw,
@@ -33,7 +37,9 @@ struct enj {
 
   inputData input;
   u_int8_t inputMeth = linuxlts;
-  std::vector<object *> objects;
+  std::vector<instance *> instances;
+  std::unordered_map<std::type_index, std::vector<instance *>> typeinstances;
+
   u_int8_t rendering = REND_wireframe;
   camera currentCam;
 
@@ -60,7 +66,20 @@ struct enj {
 
   void write();
   void render();
-
-  object *findobj(std::string name);
+  instance *findobj(std::string name);
   void initPoll();
+  void printDir();
+
+  struct Instance {
+    enj &selfEnj;
+
+    Instance(enj &p) : selfEnj(p) {};
+
+    template <typename T> T *New(instance *parent);
+
+    void del(instance *p);
+    void add(instance *ob);
+  };
+
+  Instance ins = Instance(*this);
 };

@@ -6,33 +6,39 @@
 
 namespace transformation {
 
-void scale(object *obj) {
-  for (int i = 0; i < obj->dvertices.size(); i++) {
-    vec3df v = obj->dvertices[i];
-    vec3df nc2 = {v.x * obj->scale.x, v.y * obj->scale.y, v.z * obj->scale.z};
+void scale(instance *ins) {
+  if (auto *pt = dynamic_cast<instanceTypes::basepart *>(ins)) {
+    for (int i = 0; i < pt->dvertices.size(); i++) {
+      vec3df v = pt->dvertices[i];
 
-    obj->vertices[i] = nc2;
-  };
+      vec3df nc2 = {v.x * pt->scale.x, v.y * pt->scale.y, v.z * pt->scale.z};
+
+      pt->vertices[i] = nc2;
+    };
+  }
 }
 
-void rotate(object *obj) {
-  float rx = obj->rotX;
-  float ry = obj->rotY;
-  float rz = obj->rotZ;
+void rotate(instance *ins) {
+  if (auto *pt = dynamic_cast<instanceTypes::basepart *>(ins)) {
 
-  for (int i = 0; i < obj->dvertices.size(); i++) {
-    vec3df v = obj->dvertices[i];
-    vec3df nc = {v.x * obj->scale.x, v.y * obj->scale.y, v.z * obj->scale.z};
+    float rx = pt->rotX;
+    float ry = pt->rotY;
+    float rz = pt->rotZ;
 
-    vec3df nc2 = rotOperation(nc, rx, ry, rz);
+    for (int i = 0; i < pt->dvertices.size(); i++) {
+      vec3df v = pt->dvertices[i];
+      vec3df nc = {v.x * pt->scale.x, v.y * pt->scale.y, v.z * pt->scale.z};
 
-    obj->vertices[i] = nc2;
-  };
-  for (int i = 0; i < obj->dnormals.size(); i++) {
-    vec3df v = obj->dnormals[i];
-    vec3df nc2 = rotOperation(v, rx, ry, rz);
+      vec3df nc2 = rotOperation(nc, rx, ry, rz);
 
-    obj->normals[i] = nc2;
-  };
+      pt->vertices[i] = nc2;
+    };
+    for (int i = 0; i < pt->dnormals.size(); i++) {
+      vec3df v = pt->dnormals[i];
+      vec3df nc2 = rotOperation(v, rx, ry, rz);
+
+      pt->normals[i] = nc2;
+    };
+  }
 }
 } // namespace transformation

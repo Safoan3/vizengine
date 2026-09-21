@@ -73,7 +73,9 @@ CMakeFiles/engine.dir/engine/engine.cpp.o: /home/safoan/Desktop/localproj/metalr
   /usr/include/bits/stdint-intn.h \
   /usr/include/bits/stdint-least.h \
   /usr/include/bits/stdint-uintn.h \
+  /usr/include/bits/stdio.h \
   /usr/include/bits/stdio_lim.h \
+  /usr/include/bits/stdlib-bsearch.h \
   /usr/include/bits/stdlib-float.h \
   /usr/include/bits/struct_mutex.h \
   /usr/include/bits/struct_rwlock.h \
@@ -185,6 +187,8 @@ CMakeFiles/engine.dir/engine/engine.cpp.o: /home/safoan/Desktop/localproj/metalr
   /usr/include/c++/16/bits/postypes.h \
   /usr/include/c++/16/bits/predefined_ops.h \
   /usr/include/c++/16/bits/ptr_traits.h \
+  /usr/include/c++/16/bits/random.h \
+  /usr/include/c++/16/bits/random.tcc \
   /usr/include/c++/16/bits/range_access.h \
   /usr/include/c++/16/bits/ranges_algobase.h \
   /usr/include/c++/16/bits/ranges_base.h \
@@ -212,6 +216,7 @@ CMakeFiles/engine.dir/engine/engine.cpp.o: /home/safoan/Desktop/localproj/metalr
   /usr/include/c++/16/bits/stl_iterator.h \
   /usr/include/c++/16/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/16/bits/stl_iterator_base_types.h \
+  /usr/include/c++/16/bits/stl_numeric.h \
   /usr/include/c++/16/bits/stl_pair.h \
   /usr/include/c++/16/bits/stl_tempbuf.h \
   /usr/include/c++/16/bits/stl_uninitialized.h \
@@ -267,14 +272,19 @@ CMakeFiles/engine.dir/engine/engine.cpp.o: /home/safoan/Desktop/localproj/metalr
   /usr/include/c++/16/locale \
   /usr/include/c++/16/new \
   /usr/include/c++/16/numbers \
+  /usr/include/c++/16/numeric \
   /usr/include/c++/16/optional \
   /usr/include/c++/16/ostream \
+  /usr/include/c++/16/pstl/execution_defs.h \
+  /usr/include/c++/16/pstl/glue_numeric_defs.h \
   /usr/include/c++/16/pstl/pstl_config.h \
+  /usr/include/c++/16/random \
   /usr/include/c++/16/ratio \
   /usr/include/c++/16/semaphore \
   /usr/include/c++/16/span \
   /usr/include/c++/16/sstream \
   /usr/include/c++/16/stdexcept \
+  /usr/include/c++/16/stdlib.h \
   /usr/include/c++/16/stop_token \
   /usr/include/c++/16/streambuf \
   /usr/include/c++/16/string \
@@ -295,6 +305,7 @@ CMakeFiles/engine.dir/engine/engine.cpp.o: /home/safoan/Desktop/localproj/metalr
   /usr/include/c++/16/tr1/special_function_util.h \
   /usr/include/c++/16/tuple \
   /usr/include/c++/16/type_traits \
+  /usr/include/c++/16/typeindex \
   /usr/include/c++/16/typeinfo \
   /usr/include/c++/16/unordered_map \
   /usr/include/c++/16/vector \
@@ -309,6 +320,7 @@ CMakeFiles/engine.dir/engine/engine.cpp.o: /home/safoan/Desktop/localproj/metalr
   /usr/include/c++/16/x86_64-pc-linux-gnu/bits/gthr-default.h \
   /usr/include/c++/16/x86_64-pc-linux-gnu/bits/gthr.h \
   /usr/include/c++/16/x86_64-pc-linux-gnu/bits/messages_members.h \
+  /usr/include/c++/16/x86_64-pc-linux-gnu/bits/opt_random.h \
   /usr/include/c++/16/x86_64-pc-linux-gnu/bits/os_defines.h \
   /usr/include/c++/16/x86_64-pc-linux-gnu/bits/time_members.h \
   /usr/include/ctype.h \
@@ -351,9 +363,15 @@ CMakeFiles/engine.dir/engine/engine.cpp.o: /home/safoan/Desktop/localproj/metalr
   /usr/include/unistd.h \
   /usr/include/wchar.h \
   /usr/include/wctype.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/emmintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/mm_malloc.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/mmintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/mwaitintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/pmmintrin.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/stdarg.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/stddef.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/stdint.h
+  /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/stdint.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/xmmintrin.h
 
 CMakeFiles/engine.dir/home/safoan/Desktop/localproj/metalrend/graphicsapi/graphicsapi.cpp.o: /home/safoan/Desktop/localproj/metalrend/graphicsapi/graphicsapi.cpp \
   /home/safoan/Desktop/localproj/metalrend/graphicsapi/graphicsapi.h \
@@ -403,7 +421,9 @@ CMakeFiles/engine.dir/home/safoan/Desktop/localproj/metalrend/graphicsapi/graphi
   /usr/include/bits/select.h \
   /usr/include/bits/setjmp.h \
   /usr/include/bits/stdint-intn.h \
+  /usr/include/bits/stdio.h \
   /usr/include/bits/stdio_lim.h \
+  /usr/include/bits/stdlib-bsearch.h \
   /usr/include/bits/stdlib-float.h \
   /usr/include/bits/struct_mutex.h \
   /usr/include/bits/struct_rwlock.h \
@@ -688,7 +708,9 @@ CMakeFiles/engine.dir/raycasting/raycast.cpp.o: /home/safoan/Desktop/localproj/m
   /usr/include/bits/stdint-intn.h \
   /usr/include/bits/stdint-least.h \
   /usr/include/bits/stdint-uintn.h \
+  /usr/include/bits/stdio.h \
   /usr/include/bits/stdio_lim.h \
+  /usr/include/bits/stdlib-bsearch.h \
   /usr/include/bits/stdlib-float.h \
   /usr/include/bits/struct_mutex.h \
   /usr/include/bits/struct_rwlock.h \
@@ -884,6 +906,7 @@ CMakeFiles/engine.dir/raycasting/raycast.cpp.o: /home/safoan/Desktop/localproj/m
   /usr/include/c++/16/tr1/special_function_util.h \
   /usr/include/c++/16/tuple \
   /usr/include/c++/16/type_traits \
+  /usr/include/c++/16/typeindex \
   /usr/include/c++/16/typeinfo \
   /usr/include/c++/16/unordered_map \
   /usr/include/c++/16/utility \
@@ -1016,7 +1039,9 @@ CMakeFiles/engine.dir/rendering/render.cpp.o: /home/safoan/Desktop/localproj/met
   /usr/include/bits/stdint-intn.h \
   /usr/include/bits/stdint-least.h \
   /usr/include/bits/stdint-uintn.h \
+  /usr/include/bits/stdio.h \
   /usr/include/bits/stdio_lim.h \
+  /usr/include/bits/stdlib-bsearch.h \
   /usr/include/bits/stdlib-float.h \
   /usr/include/bits/struct_mutex.h \
   /usr/include/bits/struct_rwlock.h \
@@ -1227,6 +1252,7 @@ CMakeFiles/engine.dir/rendering/render.cpp.o: /home/safoan/Desktop/localproj/met
   /usr/include/c++/16/tr1/special_function_util.h \
   /usr/include/c++/16/tuple \
   /usr/include/c++/16/type_traits \
+  /usr/include/c++/16/typeindex \
   /usr/include/c++/16/typeinfo \
   /usr/include/c++/16/unordered_map \
   /usr/include/c++/16/vector \
@@ -1292,23 +1318,7 @@ CMakeFiles/engine.dir/rendering/render.cpp.o: /home/safoan/Desktop/localproj/met
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/xmmintrin.h
 
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/16/include/xmmintrin.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/16/include/pmmintrin.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/16/include/mmintrin.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/16/include/emmintrin.h:
-
-/usr/include/c++/16/x86_64-pc-linux-gnu/bits/opt_random.h:
-
-/usr/include/c++/16/pstl/glue_numeric_defs.h:
-
-/usr/include/c++/16/numeric:
-
 /usr/include/c++/16/bits/ranges_algo.h:
-
-/usr/include/c++/16/bits/random.tcc:
 
 /usr/include/c++/16/algorithm:
 
@@ -1326,7 +1336,15 @@ CMakeFiles/engine.dir/rendering/render.cpp.o: /home/safoan/Desktop/localproj/met
 
 /usr/include/c++/16/cstring:
 
+/usr/lib/gcc/x86_64-pc-linux-gnu/16/include/xmmintrin.h:
+
 /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/stdint.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/16/include/pmmintrin.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/16/include/mmintrin.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/16/include/emmintrin.h:
 
 /usr/include/wchar.h:
 
@@ -1364,15 +1382,13 @@ CMakeFiles/engine.dir/rendering/render.cpp.o: /home/safoan/Desktop/localproj/met
 
 /usr/include/features-time64.h:
 
-/usr/include/c++/16/random:
-
-/usr/include/fcntl.h:
-
 /usr/include/c++/16/x86_64-pc-linux-gnu/bits/time_members.h:
 
 /usr/include/stdc-predef.h:
 
 /usr/include/c++/16/x86_64-pc-linux-gnu/bits/os_defines.h:
+
+/usr/include/c++/16/x86_64-pc-linux-gnu/bits/opt_random.h:
 
 /usr/include/c++/16/x86_64-pc-linux-gnu/bits/messages_members.h:
 
@@ -1402,12 +1418,6 @@ CMakeFiles/engine.dir/rendering/render.cpp.o: /home/safoan/Desktop/localproj/met
 
 /usr/include/c++/16/tr1/special_function_util.h:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/16/include/mm_malloc.h:
-
-/usr/include/c++/16/bits/stl_numeric.h:
-
-/usr/include/c++/16/tr1/poly_laguerre.tcc:
-
 /usr/include/c++/16/tr1/modified_bessel_func.tcc:
 
 /usr/include/c++/16/tr1/legendre_function.tcc:
@@ -1432,6 +1442,14 @@ CMakeFiles/engine.dir/rendering/render.cpp.o: /home/safoan/Desktop/localproj/met
 
 /usr/include/c++/16/ratio:
 
+/usr/include/fcntl.h:
+
+/usr/include/c++/16/random:
+
+/usr/include/c++/16/pstl/glue_numeric_defs.h:
+
+/usr/include/c++/16/numeric:
+
 /usr/include/c++/16/numbers:
 
 /usr/include/c++/16/locale:
@@ -1448,6 +1466,8 @@ CMakeFiles/engine.dir/rendering/render.cpp.o: /home/safoan/Desktop/localproj/met
 
 /usr/include/c++/16/initializer_list:
 
+/usr/include/c++/16/functional:
+
 /usr/include/c++/16/pstl/execution_defs.h:
 
 /usr/include/c++/16/bits/allocator.h:
@@ -1459,10 +1479,6 @@ CMakeFiles/engine.dir/rendering/render.cpp.o: /home/safoan/Desktop/localproj/met
 /usr/include/c++/16/bit:
 
 /home/safoan/Desktop/localproj/metalrend/engine/gameengine/rendering/camprojection.h:
-
-/usr/include/c++/16/bits/atomic_base.h:
-
-/usr/include/bits/fcntl.h:
 
 /usr/include/c++/16/bits/alloc_traits.h:
 
@@ -1536,6 +1552,8 @@ CMakeFiles/engine.dir/rendering/render.cpp.o: /home/safoan/Desktop/localproj/met
 
 /usr/include/c++/16/cerrno:
 
+/usr/include/bits/stdlib-bsearch.h:
+
 /usr/include/c++/16/pstl/pstl_config.h:
 
 /usr/include/c++/16/ostream:
@@ -1567,6 +1585,10 @@ CMakeFiles/engine.dir/rendering/render.cpp.o: /home/safoan/Desktop/localproj/met
 /usr/include/sys/select.h:
 
 /usr/include/c++/16/ext/aligned_buffer.h:
+
+/usr/include/bits/fcntl.h:
+
+/usr/include/c++/16/bits/atomic_base.h:
 
 /usr/include/features.h:
 
@@ -1622,8 +1644,6 @@ CMakeFiles/engine.dir/rendering/render.cpp.o: /home/safoan/Desktop/localproj/met
 
 /usr/include/asm/ioctls.h:
 
-/usr/include/bits/cpu-set.h:
-
 /usr/include/libintl.h:
 
 /usr/include/bits/endianness.h:
@@ -1651,6 +1671,8 @@ CMakeFiles/engine.dir/rendering/render.cpp.o: /home/safoan/Desktop/localproj/met
 /usr/include/bits/uintn-identity.h:
 
 /usr/include/bits/typesizes.h:
+
+/usr/include/bits/cpu-set.h:
 
 /home/safoan/Desktop/localproj/metalrend/engine/gameengine/math/vectorm.h:
 
@@ -1794,6 +1816,8 @@ CMakeFiles/engine.dir/rendering/render.cpp.o: /home/safoan/Desktop/localproj/met
 
 /home/safoan/Desktop/localproj/metalrend/graphicsapi/vectr.h:
 
+/usr/include/bits/stdio.h:
+
 /home/safoan/Desktop/localproj/metalrend/engine/gameengine/raycasting/barycentric.h:
 
 /home/safoan/Desktop/localproj/metalrend/graphicsapi/graphicsapi.h:
@@ -1807,6 +1831,10 @@ CMakeFiles/engine.dir/rendering/render.cpp.o: /home/safoan/Desktop/localproj/met
 /usr/include/c++/16/x86_64-pc-linux-gnu/bits/gthr-default.h:
 
 /usr/include/c++/16/bits/locale_facets_nonio.tcc:
+
+/usr/include/c++/16/ext/type_traits.h:
+
+/usr/include/bits/thread-shared-types.h:
 
 /usr/include/bits/ioctl-types.h:
 
@@ -1841,6 +1869,12 @@ CMakeFiles/engine.dir/rendering/render.cpp.o: /home/safoan/Desktop/localproj/met
 /usr/include/bits/types/__fpos_t.h:
 
 /usr/include/c++/16/bits/char_traits.h:
+
+/usr/include/c++/16/ext/string_conversions.h:
+
+/usr/include/bits/atomic_wide_counter.h:
+
+/usr/include/c++/16/bits/charconv.h:
 
 /usr/include/gnu/stubs.h:
 
@@ -1881,8 +1915,6 @@ CMakeFiles/engine.dir/rendering/render.cpp.o: /home/safoan/Desktop/localproj/met
 /usr/include/c++/16/bits/utility.h:
 
 /usr/include/c++/16/bits/formatfwd.h:
-
-/usr/include/c++/16/functional:
 
 /usr/include/c++/16/thread:
 
@@ -1930,6 +1962,10 @@ CMakeFiles/engine.dir/rendering/render.cpp.o: /home/safoan/Desktop/localproj/met
 
 /usr/include/c++/16/bits/monostate.h:
 
+/usr/include/c++/16/format:
+
+/usr/include/c++/16/cstddef:
+
 /usr/include/c++/16/bits/move.h:
 
 /usr/include/c++/16/bits/new_allocator.h:
@@ -1937,6 +1973,8 @@ CMakeFiles/engine.dir/rendering/render.cpp.o: /home/safoan/Desktop/localproj/met
 /usr/include/c++/16/bits/new_except.h:
 
 /usr/include/c++/16/bits/node_handle.h:
+
+/usr/include/c++/16/typeindex:
 
 /usr/include/c++/16/bits/hashtable_policy.h:
 
@@ -1946,11 +1984,19 @@ CMakeFiles/engine.dir/rendering/render.cpp.o: /home/safoan/Desktop/localproj/met
 
 /usr/include/c++/16/bits/postypes.h:
 
+/usr/include/c++/16/bits/random.tcc:
+
 /usr/include/c++/16/bits/range_access.h:
 
 /usr/include/sys/types.h:
 
 /usr/include/c++/16/bits/ranges_algobase.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/16/include/mm_malloc.h:
+
+/usr/include/c++/16/tr1/poly_laguerre.tcc:
+
+/usr/include/c++/16/bits/stl_numeric.h:
 
 /usr/include/c++/16/bits/ranges_base.h:
 
@@ -2041,17 +2087,3 @@ CMakeFiles/engine.dir/rendering/render.cpp.o: /home/safoan/Desktop/localproj/met
 /usr/include/c++/16/exception:
 
 /usr/include/c++/16/ext/concurrence.h:
-
-/usr/include/bits/atomic_wide_counter.h:
-
-/usr/include/c++/16/bits/charconv.h:
-
-/usr/include/c++/16/ext/string_conversions.h:
-
-/usr/include/bits/thread-shared-types.h:
-
-/usr/include/c++/16/ext/type_traits.h:
-
-/usr/include/c++/16/cstddef:
-
-/usr/include/c++/16/format:

@@ -8,8 +8,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/engineprogramme.dir/raycasting/raycast.cpp.o.d"
   "CMakeFiles/engineprogramme.dir/rendering/render.cpp.o"
   "CMakeFiles/engineprogramme.dir/rendering/render.cpp.o.d"
-  "CMakeFiles/engineprogramme.dir/testing/enginetest.cpp.o"
-  "CMakeFiles/engineprogramme.dir/testing/enginetest.cpp.o.d"
+  "CMakeFiles/engineprogramme.dir/testing/fps.cpp.o"
+  "CMakeFiles/engineprogramme.dir/testing/fps.cpp.o.d"
   "engineprogramme"
   "engineprogramme.pdb"
 )

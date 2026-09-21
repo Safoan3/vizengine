@@ -6,7 +6,7 @@ engineprogramme: \
   CMakeFiles/engineprogramme.dir/raycasting/raycast.cpp.o \
   CMakeFiles/engineprogramme.dir/rendering/render.cpp.o \
   CMakeFiles/engineprogramme.dir/home/safoan/Desktop/localproj/metalrend/graphicsapi/graphicsapi.cpp.o \
-  CMakeFiles/engineprogramme.dir/testing/enginetest.cpp.o \
+  CMakeFiles/engineprogramme.dir/testing/fps.cpp.o \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/libstdc++.so \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/libm.so \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/libm.so \
@@ -53,7 +53,7 @@ CMakeFiles/engineprogramme.dir/rendering/render.cpp.o:
 
 CMakeFiles/engineprogramme.dir/home/safoan/Desktop/localproj/metalrend/graphicsapi/graphicsapi.cpp.o:
 
-CMakeFiles/engineprogramme.dir/testing/enginetest.cpp.o:
+CMakeFiles/engineprogramme.dir/testing/fps.cpp.o:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/16/libstdc++.so:
 

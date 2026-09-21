@@ -13,63 +13,67 @@ void renderingmethods::wireframe(enj &engine) {
   engine.env->clear();
   camera &cam = engine.currentCam;
 
-  for (object *ob : engine.objects) {
-    object o = (*ob);
+  for (instance *ob : engine.instances) {
 
-    for (int edgeIndex = 0; edgeIndex < o.edges.size();
-         edgeIndex = edgeIndex + 2) {
+    if (auto *pt = dynamic_cast<instanceTypes::basepart *>(ob)) {
+      instanceTypes::basepart o = (*pt);
 
-      int edge2 = -1;
-      int edge1 = o.edges[edgeIndex];
+      for (int edgeIndex = 0; edgeIndex < o.edges.size();
+           edgeIndex = edgeIndex + 2) {
 
-      if (edgeIndex + 1 < o.edges.size()) {
-        edge2 = o.edges[edgeIndex + 1];
-      }
+        int edge2 = -1;
+        int edge1 = o.edges[edgeIndex];
 
-      if (edge2 > -1 && edge2 < o.vertices.size()) {
-        vec3df v1 = o.vertices[edge1] + o.position;
-        vec3df v2 = o.vertices[edge2] + o.position;
+        if (edgeIndex + 1 < o.edges.size()) {
+          edge2 = o.edges[edgeIndex + 1];
+        }
 
-        vec3df v1Rel = v1 - cam.position;
-        vec3df v2Rel = v2 - cam.position;
+        if (edge2 > -1 && edge2 < o.vertices.size()) {
+          vec3df v1 = o.vertices[edge1] + o.position;
+          vec3df v2 = o.vertices[edge2] + o.position;
 
-        float dot1 = v1Rel.dot(cam.direction);
-        float dot2 = v2Rel.dot(cam.direction);
-        //        std::cout << "{dot1, dot2} = " << dot1 << ", " << dot2 <<
-        //        "\n";
-        //
-        if (dot1 > 0 && dot2 > 0) {
-          vec2df vp = project(cam, v1, engine.resolution);
-          vec2df vp2 = project(cam, v2, engine.resolution);
+          vec3df v1Rel = v1 - cam.position;
+          vec3df v2Rel = v2 - cam.position;
 
-          vp = vp;
-          vp2 = vp2;
+          float dot1 = v1Rel.dot(cam.direction);
+          float dot2 = v2Rel.dot(cam.direction);
+          //        std::cout << "{dot1, dot2} = " << dot1 << ", " << dot2 <<
+          //        "\n";
+          //
+          if (dot1 > 0 && dot2 > 0) {
+            vec2df vp = project(cam, v1, engine.resolution);
+            vec2df vp2 = project(cam, v2, engine.resolution);
 
-          vec2 pz = {(int)vp.x, (int)vp.y};
-          vec2 py = {(int)vp2.x, (int)vp2.y};
+            vp = vp;
+            vp2 = vp2;
 
-          float shading = 0.0f;
-          float ambient = 0.35f;
+            vec2 pz = {(int)vp.x, (int)vp.y};
+            vec2 py = {(int)vp2.x, (int)vp2.y};
 
-          if (edge1 < o.normals.size()) {
-            shading = o.vertices[edge1].dot(lightDirX * -1) / 1.0f;
-            //  shading = shading + o.vertices[edge2].dot(lightDir * -1) / 2.0f;
+            float shading = 0.0f;
+            float ambient = 0.35f;
 
-            shading = std::clamp(shading, 0.0f, 1.0f);
+            if (edge1 < o.normals.size()) {
+              shading = o.vertices[edge1].dot(lightDirX * -1) / 1.0f;
+              //  shading = shading + o.vertices[edge2].dot(lightDir * -1)
+              //  / 2.0f;
+
+              shading = std::clamp(shading, 0.0f, 1.0f);
+            }
+
+            float z1relcam = v1Rel.magnitude();
+            float z2relcam = v2Rel.magnitude();
+
+            shading = ambient + (1 - ambient) * shading;
+
+            engine.env->line(pz, py,
+                             {shading, o.col3.r * shading, o.col3.g * shading,
+                              o.col3.b * shading},
+                             z1relcam, z2relcam);
+
+          } else {
+            // std::cout << "out of sight! \n";
           }
-
-          float z1relcam = v1Rel.magnitude();
-          float z2relcam = v2Rel.magnitude();
-
-          shading = ambient + (1 - ambient) * shading;
-
-          engine.env->line(pz, py,
-                           {shading, o.col3.r * shading, o.col3.g * shading,
-                            o.col3.b * shading},
-                           z1relcam, z2relcam);
-
-        } else {
-          // std::cout << "out of sight! \n";
         }
       }
     }
@@ -81,76 +85,77 @@ void renderingmethods::rasterize(enj &engine) {
   engine.env->clear();
   camera &cam = engine.currentCam;
 
-  for (object *ob : engine.objects) {
-    object o = (*ob);
+  for (instance *ob : engine.typeinstances[typeid(instanceTypes::basepart)]) {
+    if (auto *pt = dynamic_cast<instanceTypes::basepart *>(ob)) {
+      instanceTypes::basepart o = (*pt);
 
-    for (int edgeIndex = 0; edgeIndex + 2 < o.edges.size();
-         edgeIndex = edgeIndex + 3) {
+      for (int edgeIndex = 0; edgeIndex + 2 < o.edges.size();
+           edgeIndex = edgeIndex + 3) {
 
-      int edge1 = o.edges[edgeIndex];
-      int edge2 = o.edges[edgeIndex + 1];
-      int edge0 = o.edges[edgeIndex + 2];
+        int edge1 = o.edges[edgeIndex];
+        int edge2 = o.edges[edgeIndex + 1];
+        int edge0 = o.edges[edgeIndex + 2];
 
-      {
-        vec3df v1 = o.vertices[edge1] + o.position;
-        vec3df v2 = o.vertices[edge2] + o.position;
-        vec3df v3 = o.vertices[edge0] + o.position;
+        {
+          vec3df v1 = o.vertices[edge1] + o.position;
+          vec3df v2 = o.vertices[edge2] + o.position;
+          vec3df v3 = o.vertices[edge0] + o.position;
 
-        vec3df v1Rel = v1 - cam.position;
-        vec3df v2Rel = v2 - cam.position;
-        vec3df v3Rel = v3 - cam.position;
+          vec3df v1Rel = v1 - cam.position;
+          vec3df v2Rel = v2 - cam.position;
+          vec3df v3Rel = v3 - cam.position;
 
-        vec3df normal_ = (v2 - v1).cross((v3 - v1)).normalize();
+          vec3df normal_ = (v2 - v1).cross((v3 - v1)).normalize();
 
-        vec3df camdir = cam.direction.normalize();
+          vec3df camdir = cam.direction.normalize();
 
-        float dot1 = v1Rel.dot(camdir);
-        float dot2 = v2Rel.dot(camdir);
-        float dot3 = v3Rel.dot(camdir);
+          float dot1 = v1Rel.dot(camdir);
+          float dot2 = v2Rel.dot(camdir);
+          float dot3 = v3Rel.dot(camdir);
 
-        float dot = normal_.dot(camdir);
+          float dot = normal_.dot(camdir);
 
-        //        dot = 1.0f;
+          //        dot = 1.0f;
 
-        //        std::cout << "{dot1, dot2} = " << dot1 << ", " << dot2 <<
-        //        "\n";
-        //
-        //  std::cout << dot << "\n";
-        //  dot = 1.0f;
-        //
+          //        std::cout << "{dot1, dot2} = " << dot1 << ", " << dot2 <<
+          //        "\n";
+          //
+          //  std::cout << dot << "\n";
+          //  dot = 1.0f;
+          //
 
-        bool onScreen = dot1 > 0 && dot2 > 0 && dot3 > 0;
+          bool onScreen = dot1 > 0 && dot2 > 0 && dot3 > 0;
 
-        if (dot > -0.1f && onScreen) {
+          if (dot > -0.1f && onScreen) {
 
-          vec2df vp = project(cam, v1, engine.resolution);
-          vec2df vp2 = project(cam, v2, engine.resolution);
-          vec2df vp3 = project(cam, v3, engine.resolution);
+            vec2df vp = project(cam, v1, engine.resolution);
+            vec2df vp2 = project(cam, v2, engine.resolution);
+            vec2df vp3 = project(cam, v3, engine.resolution);
 
-          vec2 pz = {(int)vp.x, (int)vp.y};
-          vec2 py = {(int)vp2.x, (int)vp2.y};
-          vec2 px = {(int)vp3.x, (int)vp3.y};
+            vec2 pz = {(int)vp.x, (int)vp.y};
+            vec2 py = {(int)vp2.x, (int)vp2.y};
+            vec2 px = {(int)vp3.x, (int)vp3.y};
 
-          float shading = 0.0f;
-          float ambient = 0.35f;
+            float shading = 0.0f;
+            float ambient = 0.35f;
 
-          shading = normal_.dot(cam.direction);
+            shading = normal_.dot(cam.direction);
 
-          float z1relcam = v1Rel.magnitude();
-          float z2relcam = v2Rel.magnitude();
-          float z3relcam = v3Rel.magnitude();
+            float z1relcam = v1Rel.magnitude();
+            float z2relcam = v2Rel.magnitude();
+            float z3relcam = v3Rel.magnitude();
 
-          shading = ambient + (1 - ambient) * shading;
-          shading = 1.0f;
-          shading = std::clamp(shading, 0.0f, 1.0f);
-          // std::cout << shading << "\n";
-          engine.env->drawTriangle(py, px, pz,
-                                   {shading, o.col3.r * shading,
-                                    o.col3.g * shading, o.col3.b * shading},
-                                   dot2, dot3, dot1);
+            shading = ambient + (1 - ambient) * shading;
+            shading = std::clamp(shading, 0.0f, 1.0f);
+            // std::cout << shading << "\n";
+            engine.env->drawTriangle(py, px, pz,
+                                     {shading, o.col3.r * shading,
+                                      o.col3.g * shading, o.col3.b * shading},
+                                     dot2, dot3, dot1);
 
-        } else {
-          // std::cout << "out of sight! \n";
+          } else {
+            // std::cout << "out of sight! \n";
+          }
         }
       }
     }
@@ -163,36 +168,39 @@ void renderingmethods::dotted(enj &engine) {
   engine.env->clear();
   camera &cam = engine.currentCam;
 
-  for (object *ob : engine.objects) {
-    object o = (*ob);
-    for (vec3df vert : ob->vertices) {
-      vec3df v1 = vert + o.position;
+  for (instance *ob : engine.instances) {
+    if (auto *pt = dynamic_cast<instanceTypes::basepart *>(ob)) {
+      instanceTypes::basepart o = (*pt);
 
-      vec3df v1Rel = v1 - cam.position;
+      for (vec3df vert : o.vertices) {
+        vec3df v1 = vert + o.position;
 
-      float dot1 = v1Rel.dot(cam.direction);
+        vec3df v1Rel = v1 - cam.position;
 
-      if (dot1 > 0) {
-        vec2df vp = project(cam, v1, engine.resolution);
+        float dot1 = v1Rel.dot(cam.direction);
 
-        vec2 pz = {(int)vp.x, (int)vp.y};
+        if (dot1 > 0) {
+          vec2df vp = project(cam, v1, engine.resolution);
 
-        float shading = 0.0f;
-        float ambient = 0.15f;
+          vec2 pz = {(int)vp.x, (int)vp.y};
 
-        shading = vert.dot(lightDirX * -1);
-        shading = std::clamp(shading, 0.0f, 1.0f);
+          float shading = 0.0f;
+          float ambient = 0.15f;
 
-        float z1relcam = v1Rel.magnitude();
-        shading = ambient + (1 - ambient) * shading;
+          shading = vert.dot(lightDirX * -1);
+          shading = std::clamp(shading, 0.0f, 1.0f);
 
-        engine.env->setPixel(pz,
-                             {shading, o.col3.r * shading, o.col3.g * shading,
-                              o.col3.b * shading},
-                             z1relcam);
+          float z1relcam = v1Rel.magnitude();
+          shading = ambient + (1 - ambient) * shading;
 
-      } else {
-        // std::cout << "out of sight! \n";
+          engine.env->setPixel(pz,
+                               {shading, o.col3.r * shading, o.col3.g * shading,
+                                o.col3.b * shading},
+                               z1relcam);
+
+        } else {
+          // std::cout << "out of sight! \n";
+        }
       }
     }
   }
@@ -250,11 +258,10 @@ void lowraytrace(enj &engine, float noise) {
                    -1.0f; // actually "right" — see note
   vec3df topVec = leftVec.cross(forward).normalize();
 
-  object *lightObj = engine.findobj("light");
+  instance *lightObj = engine.findobj("light");
   vec3df lightPos = cam.position + vec3df{0, 10.0f, 0};
-
-  if (lightObj != nullptr) {
-    lightPos = lightObj->position;
+  if (auto *pt = dynamic_cast<instanceTypes::basepart *>(lightObj)) {
+    lightPos = pt->position;
   }
 
   for (int j = 0; j < resy; j++) {

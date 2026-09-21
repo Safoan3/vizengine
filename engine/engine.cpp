@@ -1,7 +1,9 @@
 #include "engine.h"
 #include "../rendering/render.h"
 #include <chrono>
+#include <random>
 #include <thread>
+#include <typeinfo>
 
 void pollthread(enj *p) {
   if (p->inputMeth == linuxlts) {
@@ -39,11 +41,72 @@ void enj::write() {
 
 void enj::render() { TotalRenderImage->finalrenderimg.render(); };
 
-object *enj::findobj(std::string name) {
-  for (object *ob : objects) {
+instance *enj::findobj(std::string name) {
+  for (instance *ob : instances) {
     if (ob->name == name) {
       return ob;
     }
   }
   return nullptr;
+};
+
+void enj::printDir() {
+  auto recursive = [](auto &self, const std::vector<instance *> array,
+                      int depth) -> void {
+    for (instance *ob : array) {
+      std::string spacing = "";
+      for (int i = 0; i < depth; i++) {
+        spacing = spacing + " ";
+      }
+      std::string toPrint = spacing + "-|" + ob->name;
+      std::cout << toPrint << "\n";
+
+      self(self, ob->children, depth + 1);
+    }
+  };
+
+  recursive(recursive, instances, 1);
+}
+
+template <typename T>
+
+T *enj::Instance::New(instance *parent) {
+  T *ob = new T();
+
+  if (parent != nullptr) {
+    return nullptr;
+  }
+  const auto &typeinfo = typeid(*ob);
+
+  selfEnj.instances.push_back(ob);
+
+  selfEnj.typeinstances[typeinfo].push_back(ob);
+
+  return ob;
+};
+
+void enj::Instance::add(instance *ob) {
+  if (ob != nullptr) {
+    const auto &typeinfo = typeid(*ob);
+    selfEnj.typeinstances[typeinfo].push_back(ob);
+    selfEnj.instances.push_back(ob);
+  }
+}
+
+void enj::Instance::del(instance *p) {
+  for (instance *ob : p->children) {
+    if (ob != nullptr) {
+      del(p);
+    }
+  }
+  p->parent = nullptr;
+  auto &instances = selfEnj.instances;
+
+  instances.erase(std::remove(instances.begin(), instances.end(), p),
+                  instances.end());
+
+  auto &typeVec = selfEnj.typeinstances[typeid(*p)];
+  typeVec.erase(std::remove(typeVec.begin(), typeVec.end(), p), typeVec.end());
+
+  delete p;
 };
