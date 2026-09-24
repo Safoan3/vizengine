@@ -23,13 +23,16 @@ void enj::initPoll() {
   std::cout << "thread is finished!";
 }
 
-void enj::write() {
+void enj::write(RenderingMethods rendering) {
   // renderingmethods::wireframe(*this);
 
   // env->clear();
 
-  renderingmethods::rasterize(*this);
-  // renderingmethods::raytracer(*this);
+  if (rendering == REND_rasterize) {
+    renderingmethods::rasterize(*this);
+  } else if (rendering == REND_raytrace) {
+    renderingmethods::raytracer(*this);
+  }
 
   // renderingmethods::dotted(*this);
   // renderingmethods::debugs::zbuffdebug(*this);

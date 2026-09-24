@@ -53,10 +53,10 @@ RM = /usr/sbin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/safoan/Desktop/localproj/metalrend/engine/gameengine
+CMAKE_SOURCE_DIR = /home/safoan/Desktop/localproj/metalrend/VizEngineTest/VizEngine
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/safoan/Desktop/localproj/metalrend/engine/gameengine/build
+CMAKE_BINARY_DIR = /home/safoan/Desktop/localproj/metalrend/VizEngineTest/VizEngine/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/engine.dir/depend.make
@@ -73,51 +73,51 @@ CMakeFiles/engine.dir/codegen:
 .PHONY : CMakeFiles/engine.dir/codegen
 
 CMakeFiles/engine.dir/engine/engine.cpp.o: CMakeFiles/engine.dir/flags.make
-CMakeFiles/engine.dir/engine/engine.cpp.o: /home/safoan/Desktop/localproj/metalrend/engine/gameengine/engine/engine.cpp
+CMakeFiles/engine.dir/engine/engine.cpp.o: /home/safoan/Desktop/localproj/metalrend/VizEngineTest/VizEngine/engine/engine.cpp
 CMakeFiles/engine.dir/engine/engine.cpp.o: CMakeFiles/engine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/safoan/Desktop/localproj/metalrend/engine/gameengine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/engine.dir/engine/engine.cpp.o"
-	/usr/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/engine.dir/engine/engine.cpp.o -MF CMakeFiles/engine.dir/engine/engine.cpp.o.d -o CMakeFiles/engine.dir/engine/engine.cpp.o -c /home/safoan/Desktop/localproj/metalrend/engine/gameengine/engine/engine.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/safoan/Desktop/localproj/metalrend/VizEngineTest/VizEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/engine.dir/engine/engine.cpp.o"
+	/usr/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/engine.dir/engine/engine.cpp.o -MF CMakeFiles/engine.dir/engine/engine.cpp.o.d -o CMakeFiles/engine.dir/engine/engine.cpp.o -c /home/safoan/Desktop/localproj/metalrend/VizEngineTest/VizEngine/engine/engine.cpp
 
 CMakeFiles/engine.dir/engine/engine.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/engine.dir/engine/engine.cpp.i"
-	/usr/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/safoan/Desktop/localproj/metalrend/engine/gameengine/engine/engine.cpp > CMakeFiles/engine.dir/engine/engine.cpp.i
+	/usr/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/safoan/Desktop/localproj/metalrend/VizEngineTest/VizEngine/engine/engine.cpp > CMakeFiles/engine.dir/engine/engine.cpp.i
 
 CMakeFiles/engine.dir/engine/engine.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/engine.dir/engine/engine.cpp.s"
-	/usr/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/safoan/Desktop/localproj/metalrend/engine/gameengine/engine/engine.cpp -o CMakeFiles/engine.dir/engine/engine.cpp.s
+	/usr/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/safoan/Desktop/localproj/metalrend/VizEngineTest/VizEngine/engine/engine.cpp -o CMakeFiles/engine.dir/engine/engine.cpp.s
 
 CMakeFiles/engine.dir/raycasting/raycast.cpp.o: CMakeFiles/engine.dir/flags.make
-CMakeFiles/engine.dir/raycasting/raycast.cpp.o: /home/safoan/Desktop/localproj/metalrend/engine/gameengine/raycasting/raycast.cpp
+CMakeFiles/engine.dir/raycasting/raycast.cpp.o: /home/safoan/Desktop/localproj/metalrend/VizEngineTest/VizEngine/raycasting/raycast.cpp
 CMakeFiles/engine.dir/raycasting/raycast.cpp.o: CMakeFiles/engine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/safoan/Desktop/localproj/metalrend/engine/gameengine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/engine.dir/raycasting/raycast.cpp.o"
-	/usr/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/engine.dir/raycasting/raycast.cpp.o -MF CMakeFiles/engine.dir/raycasting/raycast.cpp.o.d -o CMakeFiles/engine.dir/raycasting/raycast.cpp.o -c /home/safoan/Desktop/localproj/metalrend/engine/gameengine/raycasting/raycast.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/safoan/Desktop/localproj/metalrend/VizEngineTest/VizEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/engine.dir/raycasting/raycast.cpp.o"
+	/usr/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/engine.dir/raycasting/raycast.cpp.o -MF CMakeFiles/engine.dir/raycasting/raycast.cpp.o.d -o CMakeFiles/engine.dir/raycasting/raycast.cpp.o -c /home/safoan/Desktop/localproj/metalrend/VizEngineTest/VizEngine/raycasting/raycast.cpp
 
 CMakeFiles/engine.dir/raycasting/raycast.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/engine.dir/raycasting/raycast.cpp.i"
-	/usr/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/safoan/Desktop/localproj/metalrend/engine/gameengine/raycasting/raycast.cpp > CMakeFiles/engine.dir/raycasting/raycast.cpp.i
+	/usr/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/safoan/Desktop/localproj/metalrend/VizEngineTest/VizEngine/raycasting/raycast.cpp > CMakeFiles/engine.dir/raycasting/raycast.cpp.i
 
 CMakeFiles/engine.dir/raycasting/raycast.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/engine.dir/raycasting/raycast.cpp.s"
-	/usr/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/safoan/Desktop/localproj/metalrend/engine/gameengine/raycasting/raycast.cpp -o CMakeFiles/engine.dir/raycasting/raycast.cpp.s
+	/usr/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/safoan/Desktop/localproj/metalrend/VizEngineTest/VizEngine/raycasting/raycast.cpp -o CMakeFiles/engine.dir/raycasting/raycast.cpp.s
 
 CMakeFiles/engine.dir/rendering/render.cpp.o: CMakeFiles/engine.dir/flags.make
-CMakeFiles/engine.dir/rendering/render.cpp.o: /home/safoan/Desktop/localproj/metalrend/engine/gameengine/rendering/render.cpp
+CMakeFiles/engine.dir/rendering/render.cpp.o: /home/safoan/Desktop/localproj/metalrend/VizEngineTest/VizEngine/rendering/render.cpp
 CMakeFiles/engine.dir/rendering/render.cpp.o: CMakeFiles/engine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/safoan/Desktop/localproj/metalrend/engine/gameengine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/engine.dir/rendering/render.cpp.o"
-	/usr/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/engine.dir/rendering/render.cpp.o -MF CMakeFiles/engine.dir/rendering/render.cpp.o.d -o CMakeFiles/engine.dir/rendering/render.cpp.o -c /home/safoan/Desktop/localproj/metalrend/engine/gameengine/rendering/render.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/safoan/Desktop/localproj/metalrend/VizEngineTest/VizEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/engine.dir/rendering/render.cpp.o"
+	/usr/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/engine.dir/rendering/render.cpp.o -MF CMakeFiles/engine.dir/rendering/render.cpp.o.d -o CMakeFiles/engine.dir/rendering/render.cpp.o -c /home/safoan/Desktop/localproj/metalrend/VizEngineTest/VizEngine/rendering/render.cpp
 
 CMakeFiles/engine.dir/rendering/render.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/engine.dir/rendering/render.cpp.i"
-	/usr/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/safoan/Desktop/localproj/metalrend/engine/gameengine/rendering/render.cpp > CMakeFiles/engine.dir/rendering/render.cpp.i
+	/usr/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/safoan/Desktop/localproj/metalrend/VizEngineTest/VizEngine/rendering/render.cpp > CMakeFiles/engine.dir/rendering/render.cpp.i
 
 CMakeFiles/engine.dir/rendering/render.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/engine.dir/rendering/render.cpp.s"
-	/usr/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/safoan/Desktop/localproj/metalrend/engine/gameengine/rendering/render.cpp -o CMakeFiles/engine.dir/rendering/render.cpp.s
+	/usr/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/safoan/Desktop/localproj/metalrend/VizEngineTest/VizEngine/rendering/render.cpp -o CMakeFiles/engine.dir/rendering/render.cpp.s
 
 CMakeFiles/engine.dir/home/safoan/Desktop/localproj/metalrend/graphicsapi/graphicsapi.cpp.o: CMakeFiles/engine.dir/flags.make
 CMakeFiles/engine.dir/home/safoan/Desktop/localproj/metalrend/graphicsapi/graphicsapi.cpp.o: /home/safoan/Desktop/localproj/metalrend/graphicsapi/graphicsapi.cpp
 CMakeFiles/engine.dir/home/safoan/Desktop/localproj/metalrend/graphicsapi/graphicsapi.cpp.o: CMakeFiles/engine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/safoan/Desktop/localproj/metalrend/engine/gameengine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/engine.dir/home/safoan/Desktop/localproj/metalrend/graphicsapi/graphicsapi.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/safoan/Desktop/localproj/metalrend/VizEngineTest/VizEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/engine.dir/home/safoan/Desktop/localproj/metalrend/graphicsapi/graphicsapi.cpp.o"
 	/usr/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/engine.dir/home/safoan/Desktop/localproj/metalrend/graphicsapi/graphicsapi.cpp.o -MF CMakeFiles/engine.dir/home/safoan/Desktop/localproj/metalrend/graphicsapi/graphicsapi.cpp.o.d -o CMakeFiles/engine.dir/home/safoan/Desktop/localproj/metalrend/graphicsapi/graphicsapi.cpp.o -c /home/safoan/Desktop/localproj/metalrend/graphicsapi/graphicsapi.cpp
 
 CMakeFiles/engine.dir/home/safoan/Desktop/localproj/metalrend/graphicsapi/graphicsapi.cpp.i: cmake_force
@@ -128,12 +128,27 @@ CMakeFiles/engine.dir/home/safoan/Desktop/localproj/metalrend/graphicsapi/graphi
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/engine.dir/home/safoan/Desktop/localproj/metalrend/graphicsapi/graphicsapi.cpp.s"
 	/usr/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/safoan/Desktop/localproj/metalrend/graphicsapi/graphicsapi.cpp -o CMakeFiles/engine.dir/home/safoan/Desktop/localproj/metalrend/graphicsapi/graphicsapi.cpp.s
 
+CMakeFiles/engine.dir/libs/miniaud/wrapper.cpp.o: CMakeFiles/engine.dir/flags.make
+CMakeFiles/engine.dir/libs/miniaud/wrapper.cpp.o: /home/safoan/Desktop/localproj/metalrend/VizEngineTest/VizEngine/libs/miniaud/wrapper.cpp
+CMakeFiles/engine.dir/libs/miniaud/wrapper.cpp.o: CMakeFiles/engine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/safoan/Desktop/localproj/metalrend/VizEngineTest/VizEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/engine.dir/libs/miniaud/wrapper.cpp.o"
+	/usr/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/engine.dir/libs/miniaud/wrapper.cpp.o -MF CMakeFiles/engine.dir/libs/miniaud/wrapper.cpp.o.d -o CMakeFiles/engine.dir/libs/miniaud/wrapper.cpp.o -c /home/safoan/Desktop/localproj/metalrend/VizEngineTest/VizEngine/libs/miniaud/wrapper.cpp
+
+CMakeFiles/engine.dir/libs/miniaud/wrapper.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/engine.dir/libs/miniaud/wrapper.cpp.i"
+	/usr/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/safoan/Desktop/localproj/metalrend/VizEngineTest/VizEngine/libs/miniaud/wrapper.cpp > CMakeFiles/engine.dir/libs/miniaud/wrapper.cpp.i
+
+CMakeFiles/engine.dir/libs/miniaud/wrapper.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/engine.dir/libs/miniaud/wrapper.cpp.s"
+	/usr/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/safoan/Desktop/localproj/metalrend/VizEngineTest/VizEngine/libs/miniaud/wrapper.cpp -o CMakeFiles/engine.dir/libs/miniaud/wrapper.cpp.s
+
 # Object files for target engine
 engine_OBJECTS = \
 "CMakeFiles/engine.dir/engine/engine.cpp.o" \
 "CMakeFiles/engine.dir/raycasting/raycast.cpp.o" \
 "CMakeFiles/engine.dir/rendering/render.cpp.o" \
-"CMakeFiles/engine.dir/home/safoan/Desktop/localproj/metalrend/graphicsapi/graphicsapi.cpp.o"
+"CMakeFiles/engine.dir/home/safoan/Desktop/localproj/metalrend/graphicsapi/graphicsapi.cpp.o" \
+"CMakeFiles/engine.dir/libs/miniaud/wrapper.cpp.o"
 
 # External object files for target engine
 engine_EXTERNAL_OBJECTS =
@@ -142,9 +157,10 @@ libengine.a: CMakeFiles/engine.dir/engine/engine.cpp.o
 libengine.a: CMakeFiles/engine.dir/raycasting/raycast.cpp.o
 libengine.a: CMakeFiles/engine.dir/rendering/render.cpp.o
 libengine.a: CMakeFiles/engine.dir/home/safoan/Desktop/localproj/metalrend/graphicsapi/graphicsapi.cpp.o
+libengine.a: CMakeFiles/engine.dir/libs/miniaud/wrapper.cpp.o
 libengine.a: CMakeFiles/engine.dir/build.make
 libengine.a: CMakeFiles/engine.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/safoan/Desktop/localproj/metalrend/engine/gameengine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX static library libengine.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/safoan/Desktop/localproj/metalrend/VizEngineTest/VizEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX static library libengine.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/engine.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/engine.dir/link.txt --verbose=$(VERBOSE)
 
@@ -157,6 +173,6 @@ CMakeFiles/engine.dir/clean:
 .PHONY : CMakeFiles/engine.dir/clean
 
 CMakeFiles/engine.dir/depend:
-	cd /home/safoan/Desktop/localproj/metalrend/engine/gameengine/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/safoan/Desktop/localproj/metalrend/engine/gameengine /home/safoan/Desktop/localproj/metalrend/engine/gameengine /home/safoan/Desktop/localproj/metalrend/engine/gameengine/build /home/safoan/Desktop/localproj/metalrend/engine/gameengine/build /home/safoan/Desktop/localproj/metalrend/engine/gameengine/build/CMakeFiles/engine.dir/DependInfo.cmake "--color=$(COLOR)" engine
+	cd /home/safoan/Desktop/localproj/metalrend/VizEngineTest/VizEngine/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/safoan/Desktop/localproj/metalrend/VizEngineTest/VizEngine /home/safoan/Desktop/localproj/metalrend/VizEngineTest/VizEngine /home/safoan/Desktop/localproj/metalrend/VizEngineTest/VizEngine/build /home/safoan/Desktop/localproj/metalrend/VizEngineTest/VizEngine/build /home/safoan/Desktop/localproj/metalrend/VizEngineTest/VizEngine/build/CMakeFiles/engine.dir/DependInfo.cmake "--color=$(COLOR)" engine
 .PHONY : CMakeFiles/engine.dir/depend
 

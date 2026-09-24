@@ -3,10 +3,10 @@
 #include "../../../graphicsapi/graphicsapi.h"
 #include "camera.h"
 
-inline vec2df perspective(vec3df a) {
+inline vec2df perspective(vec3df a, float focalL = 240.0f) {
   vec3df p1 = a;
   float iz = 1.0f;
-  float forcalLength = 240.0f;
+  float forcalLength = focalL;
 
   if (a.z < 0.001f) {
     iz = 0.001f;
@@ -18,7 +18,8 @@ inline vec2df perspective(vec3df a) {
   return ret;
 };
 
-inline vec2df project(const camera &cam, vec3df p1, vec2 resolution) {
+inline vec2df project(const camera &cam, vec3df p1, vec2 resolution,
+                      float fl = 240.0f) {
   vec3df pos = cam.position;
   vec3df dir = cam.direction;
   dir.normalize();
@@ -31,7 +32,7 @@ inline vec2df project(const camera &cam, vec3df p1, vec2 resolution) {
   vec3df nP1 = p1 - pos;
   float zmag = nP1.magnitude();
 
-  vec2df newProj = perspective({nP1.dot(left), nP1.dot(top), zmag});
+  vec2df newProj = perspective({nP1.dot(left), nP1.dot(top), zmag}, fl);
   vec2df screenpos = {(float)resolution.x / 2.0f, (float)resolution.y / 2.0f};
 
   newProj = newProj + screenpos;

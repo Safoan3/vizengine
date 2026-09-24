@@ -40,8 +40,10 @@ struct enj {
   std::vector<instance *> instances;
   std::unordered_map<std::type_index, std::vector<instance *>> typeinstances;
 
-  u_int8_t rendering = REND_wireframe;
+  // RenderingMethods rendering = REND_wireframe;
+
   camera currentCam;
+  float focalpoint = 300.0f;
 
   enj(vec2 res) {
     resolution = res;
@@ -64,7 +66,7 @@ struct enj {
     // TotalRenderImage->finalrenderimg.setCharacterDensityList();
   }
 
-  void write();
+  void write(RenderingMethods rendering = REND_rasterize);
   void render();
   instance *findobj(std::string name);
   void initPoll();

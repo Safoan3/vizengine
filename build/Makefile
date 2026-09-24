@@ -57,10 +57,10 @@ RM = /usr/sbin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/safoan/Desktop/localproj/metalrend/engine/gameengine
+CMAKE_SOURCE_DIR = /home/safoan/Desktop/localproj/metalrend/VizEngineTest/VizEngine
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/safoan/Desktop/localproj/metalrend/engine/gameengine/build
+CMAKE_BINARY_DIR = /home/safoan/Desktop/localproj/metalrend/VizEngineTest/VizEngine/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/safoan/Desktop/localproj/metalrend/engine/gameengine/build/CMakeFiles /home/safoan/Desktop/localproj/metalrend/engine/gameengine/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/safoan/Desktop/localproj/metalrend/VizEngineTest/VizEngine/build/CMakeFiles /home/safoan/Desktop/localproj/metalrend/VizEngineTest/VizEngine/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/safoan/Desktop/localproj/metalrend/engine/gameengine/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/safoan/Desktop/localproj/metalrend/VizEngineTest/VizEngine/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -117,19 +117,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named engineprogramme
-
-# Build rule for target.
-engineprogramme: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 engineprogramme
-.PHONY : engineprogramme
-
-# fast build rule for target.
-engineprogramme/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/engineprogramme.dir/build.make CMakeFiles/engineprogramme.dir/build
-.PHONY : engineprogramme/fast
-
-#=============================================================================
 # Target rules for targets named engine
 
 # Build rule for target.
@@ -147,7 +134,6 @@ engine/engine.o: engine/engine.cpp.o
 
 # target to build an object file
 engine/engine.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/engineprogramme.dir/build.make CMakeFiles/engineprogramme.dir/engine/engine.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/engine/engine.cpp.o
 .PHONY : engine/engine.cpp.o
 
@@ -156,7 +142,6 @@ engine/engine.i: engine/engine.cpp.i
 
 # target to preprocess a source file
 engine/engine.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/engineprogramme.dir/build.make CMakeFiles/engineprogramme.dir/engine/engine.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/engine/engine.cpp.i
 .PHONY : engine/engine.cpp.i
 
@@ -165,7 +150,6 @@ engine/engine.s: engine/engine.cpp.s
 
 # target to generate assembly for a file
 engine/engine.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/engineprogramme.dir/build.make CMakeFiles/engineprogramme.dir/engine/engine.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/engine/engine.cpp.s
 .PHONY : engine/engine.cpp.s
 
@@ -174,7 +158,6 @@ home/safoan/Desktop/localproj/metalrend/graphicsapi/graphicsapi.o: home/safoan/D
 
 # target to build an object file
 home/safoan/Desktop/localproj/metalrend/graphicsapi/graphicsapi.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/engineprogramme.dir/build.make CMakeFiles/engineprogramme.dir/home/safoan/Desktop/localproj/metalrend/graphicsapi/graphicsapi.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/home/safoan/Desktop/localproj/metalrend/graphicsapi/graphicsapi.cpp.o
 .PHONY : home/safoan/Desktop/localproj/metalrend/graphicsapi/graphicsapi.cpp.o
 
@@ -183,7 +166,6 @@ home/safoan/Desktop/localproj/metalrend/graphicsapi/graphicsapi.i: home/safoan/D
 
 # target to preprocess a source file
 home/safoan/Desktop/localproj/metalrend/graphicsapi/graphicsapi.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/engineprogramme.dir/build.make CMakeFiles/engineprogramme.dir/home/safoan/Desktop/localproj/metalrend/graphicsapi/graphicsapi.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/home/safoan/Desktop/localproj/metalrend/graphicsapi/graphicsapi.cpp.i
 .PHONY : home/safoan/Desktop/localproj/metalrend/graphicsapi/graphicsapi.cpp.i
 
@@ -192,16 +174,38 @@ home/safoan/Desktop/localproj/metalrend/graphicsapi/graphicsapi.s: home/safoan/D
 
 # target to generate assembly for a file
 home/safoan/Desktop/localproj/metalrend/graphicsapi/graphicsapi.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/engineprogramme.dir/build.make CMakeFiles/engineprogramme.dir/home/safoan/Desktop/localproj/metalrend/graphicsapi/graphicsapi.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/home/safoan/Desktop/localproj/metalrend/graphicsapi/graphicsapi.cpp.s
 .PHONY : home/safoan/Desktop/localproj/metalrend/graphicsapi/graphicsapi.cpp.s
+
+libs/miniaud/wrapper.o: libs/miniaud/wrapper.cpp.o
+.PHONY : libs/miniaud/wrapper.o
+
+# target to build an object file
+libs/miniaud/wrapper.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/libs/miniaud/wrapper.cpp.o
+.PHONY : libs/miniaud/wrapper.cpp.o
+
+libs/miniaud/wrapper.i: libs/miniaud/wrapper.cpp.i
+.PHONY : libs/miniaud/wrapper.i
+
+# target to preprocess a source file
+libs/miniaud/wrapper.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/libs/miniaud/wrapper.cpp.i
+.PHONY : libs/miniaud/wrapper.cpp.i
+
+libs/miniaud/wrapper.s: libs/miniaud/wrapper.cpp.s
+.PHONY : libs/miniaud/wrapper.s
+
+# target to generate assembly for a file
+libs/miniaud/wrapper.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/libs/miniaud/wrapper.cpp.s
+.PHONY : libs/miniaud/wrapper.cpp.s
 
 raycasting/raycast.o: raycasting/raycast.cpp.o
 .PHONY : raycasting/raycast.o
 
 # target to build an object file
 raycasting/raycast.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/engineprogramme.dir/build.make CMakeFiles/engineprogramme.dir/raycasting/raycast.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/raycasting/raycast.cpp.o
 .PHONY : raycasting/raycast.cpp.o
 
@@ -210,7 +214,6 @@ raycasting/raycast.i: raycasting/raycast.cpp.i
 
 # target to preprocess a source file
 raycasting/raycast.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/engineprogramme.dir/build.make CMakeFiles/engineprogramme.dir/raycasting/raycast.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/raycasting/raycast.cpp.i
 .PHONY : raycasting/raycast.cpp.i
 
@@ -219,7 +222,6 @@ raycasting/raycast.s: raycasting/raycast.cpp.s
 
 # target to generate assembly for a file
 raycasting/raycast.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/engineprogramme.dir/build.make CMakeFiles/engineprogramme.dir/raycasting/raycast.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/raycasting/raycast.cpp.s
 .PHONY : raycasting/raycast.cpp.s
 
@@ -228,7 +230,6 @@ rendering/render.o: rendering/render.cpp.o
 
 # target to build an object file
 rendering/render.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/engineprogramme.dir/build.make CMakeFiles/engineprogramme.dir/rendering/render.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/rendering/render.cpp.o
 .PHONY : rendering/render.cpp.o
 
@@ -237,7 +238,6 @@ rendering/render.i: rendering/render.cpp.i
 
 # target to preprocess a source file
 rendering/render.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/engineprogramme.dir/build.make CMakeFiles/engineprogramme.dir/rendering/render.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/rendering/render.cpp.i
 .PHONY : rendering/render.cpp.i
 
@@ -246,33 +246,8 @@ rendering/render.s: rendering/render.cpp.s
 
 # target to generate assembly for a file
 rendering/render.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/engineprogramme.dir/build.make CMakeFiles/engineprogramme.dir/rendering/render.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/rendering/render.cpp.s
 .PHONY : rendering/render.cpp.s
-
-testing/fps.o: testing/fps.cpp.o
-.PHONY : testing/fps.o
-
-# target to build an object file
-testing/fps.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/engineprogramme.dir/build.make CMakeFiles/engineprogramme.dir/testing/fps.cpp.o
-.PHONY : testing/fps.cpp.o
-
-testing/fps.i: testing/fps.cpp.i
-.PHONY : testing/fps.i
-
-# target to preprocess a source file
-testing/fps.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/engineprogramme.dir/build.make CMakeFiles/engineprogramme.dir/testing/fps.cpp.i
-.PHONY : testing/fps.cpp.i
-
-testing/fps.s: testing/fps.cpp.s
-.PHONY : testing/fps.s
-
-# target to generate assembly for a file
-testing/fps.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/engineprogramme.dir/build.make CMakeFiles/engineprogramme.dir/testing/fps.cpp.s
-.PHONY : testing/fps.cpp.s
 
 # Help Target
 help:
@@ -283,22 +258,21 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... engine"
-	@echo "... engineprogramme"
 	@echo "... engine/engine.o"
 	@echo "... engine/engine.i"
 	@echo "... engine/engine.s"
 	@echo "... home/safoan/Desktop/localproj/metalrend/graphicsapi/graphicsapi.o"
 	@echo "... home/safoan/Desktop/localproj/metalrend/graphicsapi/graphicsapi.i"
 	@echo "... home/safoan/Desktop/localproj/metalrend/graphicsapi/graphicsapi.s"
+	@echo "... libs/miniaud/wrapper.o"
+	@echo "... libs/miniaud/wrapper.i"
+	@echo "... libs/miniaud/wrapper.s"
 	@echo "... raycasting/raycast.o"
 	@echo "... raycasting/raycast.i"
 	@echo "... raycasting/raycast.s"
 	@echo "... rendering/render.o"
 	@echo "... rendering/render.i"
 	@echo "... rendering/render.s"
-	@echo "... testing/fps.o"
-	@echo "... testing/fps.i"
-	@echo "... testing/fps.s"
 .PHONY : help
 
 

@@ -54,6 +54,7 @@ struct basepart : instance {
   color col3;
   vec3df position;
   vec3df scale = {1, 1, 1};
+  std::string material = "normal";
 
   float rotX, rotY, rotZ;
 

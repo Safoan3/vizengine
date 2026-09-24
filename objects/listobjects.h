@@ -202,6 +202,114 @@ instanceTypes::basepart *createTriangleSphere(vec3df position, float length,
   return newObj;
 }
 
+instanceTypes::basepart *createPlanerTriangle(vec3df position, float length,
+                                              int depth) {
+  instanceTypes::basepart *newObj = new instanceTypes::basepart();
+
+  newObj->position = position;
+  newObj->col3 = {1.0f, 1.0f, 0.5f, 0.2f, 1.0f};
+  newObj->name = "plane";
+
+  // depth now means "grid resolution" instead of recursion depth
+  int gridRes = depth > 0 ? depth : 1;
+  float step = (2.0f * length) / (float)gridRes; // plane spans -length..+length
+
+  // 1. Generate vertices, row-major
+  auto idx = [&](int x, int z) { return z * (gridRes + 1) + x; };
+
+  for (int z = 0; z <= gridRes; z++) {
+    for (int x = 0; x <= gridRes; x++) {
+      float worldX = -length + x * step;
+      float worldZ = -length + z * step;
+      newObj->vertices.push_back({worldX, 0.0f, worldZ});
+      newObj->dvertices.push_back({worldX, 0.0f, worldZ});
+    }
+  }
+
+  // 2. Generate triangles per quad, alternating diagonal
+  for (int z = 0; z < gridRes; z++) {
+    for (int x = 0; x < gridRes; x++) {
+      int a = idx(x, z);         // top-left
+      int b = idx(x + 1, z);     // top-right
+      int c = idx(x + 1, z + 1); // bottom-right
+      int d = idx(x, z + 1);     // bottom-left
+
+      bool flip = ((x + z) % 2 == 0);
+
+      if (flip) {
+        // diagonal a-c
+        newObj->edges.push_back(a);
+        newObj->edges.push_back(c);
+        newObj->edges.push_back(b);
+
+        newObj->edges.push_back(c);
+        newObj->edges.push_back(a);
+        newObj->edges.push_back(d);
+      } else {
+        // diagonal b-d
+        newObj->edges.push_back(a);
+        newObj->edges.push_back(d);
+        newObj->edges.push_back(b);
+
+        newObj->edges.push_back(c);
+        newObj->edges.push_back(b);
+        newObj->edges.push_back(d);
+      }
+    }
+  }
+
+  return newObj;
+}
+
+instanceTypes::basepart *createPlaneTrTriangle(vec3df position, float length,
+                                               int depth) {
+  instanceTypes::basepart *newObj = new instanceTypes::basepart();
+
+  newObj->position = position;
+  newObj->col3 = {1.0f, 1.0f, 0.5f, 0.2f, 1.0f};
+  newObj->name = "plane";
+
+  std::vector<vec3df> vzV = {
+      {-1 * length, 0.0f * length, 1 * length},  // 0
+      {1 * length, 0.0f * length, 1 * length},   // 1
+      {-1 * length, 0.0f * length, -1 * length}, // 2
+      {1 * length, 0.0f * length, -1 * length},  // 3
+
+  };
+  std::vector<int> vzE = {
+      // Front face (z = +length), 2 triangles
+      2, 0, 1, 3, 2, 1,
+      // Back face (z = -length)
+  };
+
+  std::vector<vec3df> faceVerts;
+  std::vector<int> faceEdges;
+
+  for (size_t i = 0; i + 2 < vzE.size(); i += 3) {
+    vec3df v1 = vzV[vzE[i]];
+    vec3df v2 = vzV[vzE[i + 1]];
+    vec3df v3 = vzV[vzE[i + 2]];
+
+    std::vector<vec3df> faceVerts;
+    std::vector<int> faceEdges;
+    subdivideRecursive(v1, v2, v3, depth, faceVerts, faceEdges);
+
+    int base = (int)newObj->vertices.size();
+    for (int e : faceEdges)
+      newObj->edges.push_back(base + e);
+
+    for (vec3df &pp : faceVerts) {
+      newObj->vertices.push_back(pp);
+      newObj->dvertices.push_back(pp);
+    }
+  }
+
+  //  newObj->edges = vzE;
+  // newObj->vertices = vzV;
+  // newObj->dvertices = vzV;
+  return newObj;
+}
+
 instanceTypes::basepart *createCubeTrigangle(vec3df position, float length) {
   instanceTypes::basepart *newObj = new instanceTypes::basepart();
 
@@ -216,10 +324,11 @@ instanceTypes::basepart *createCubeTrigangle(vec3df position, float length) {
   std::cout << "\n";
 
   std::vector<vec3df> vc = {
-      {-1 * length, 1 * length, 1 * length},   // 0
-      {1 * length, 1 * length, 1 * length},    // 1
-      {-1 * length, -1 * length, 1 * length},  // 2
-      {1 * length, -1 * length, 1 * length},   // 3
+      {-1 * length, 1 * length, 1 * length},  // 0
+      {1 * length, 1 * length, 1 * length},   // 1
+      {-1 * length, -1 * length, 1 * length}, // 2
+      {1 * length, -1 * length, 1 * length},  // 3
+
       {-1 * length, 1 * length, -1 * length},  // 4
       {1 * length, 1 * length, -1 * length},   // 5
       {-1 * length, -1 * length, -1 * length}, // 6

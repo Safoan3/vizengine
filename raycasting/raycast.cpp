@@ -30,7 +30,7 @@ raycast::result raycast::lowCast(vec3df Origin, vec3df Direction, vec3df c1,
 
   float dot = normal.dot(Direction.normalize());
 
-  if (dot < 0.0f) {
+  if (dot < 0.0001f) {
     return toRet;
   }
 
@@ -44,6 +44,7 @@ raycast::result raycast::lowCast(vec3df Origin, vec3df Direction, vec3df c1,
        normal.z * Direction.z);
 
   toRet.hitpos = (Origin + (Direction * t));
+  toRet.normal = normal;
 
   auto axes = getAxes(c1, c2, c3);
   vec2df localC1 = {0, 0};
@@ -66,13 +67,27 @@ raycast::result raycast::lowCast(vec3df Origin, vec3df Direction, vec3df c1,
   return toRet;
 }
 
-raycast::result raycast::raycastEnj(enj &enjine, vec3df origin, vec3df dir) {
+raycast::resultenj
+raycast::raycastEnj(enj &enjine, vec3df origin, vec3df dir,
+                    std::vector<instanceTypes::basepart *> iignoreList) {
 
   std::pair<raycast::result, float> Prev;
   Prev.second = INFINITY;
 
+  instanceTypes::basepart *ho = nullptr;
+
   for (instance *ob : enjine.typeinstances[typeid(instanceTypes::basepart)]) {
     if (auto *pt = dynamic_cast<instanceTypes::basepart *>(ob)) {
+      bool ignoreFound = false;
+
+      for (instanceTypes::basepart *ok : iignoreList) {
+        if (ok != nullptr && ok == pt) {
+          ignoreFound = true;
+          break;
+        }
+      }
+      if (ignoreFound == true)
+        continue;
 
       for (int i = 0; i + 2 < pt->edges.size(); i = i + 3) {
         vec3df vert1 = pt->vertices[pt->edges[i]] + pt->position;
@@ -90,11 +105,16 @@ raycast::result raycast::raycastEnj(enj &enjine, vec3df origin, vec3df dir) {
 
             Prev.first = result;
             Prev.second = result.distance;
+            ho = pt;
           }
         }
       }
     }
   }
 
-  return Prev.first;
+  return {Prev.first.normal, Prev.first.r,        Prev.first.g, Prev.first.b,
+          Prev.first.hitpos, Prev.first.distance, ho,           Prev.first.bar,
+          Prev.first.hit
+
+  };
 };

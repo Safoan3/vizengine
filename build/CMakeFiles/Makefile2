@@ -54,21 +54,19 @@ RM = /usr/sbin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/safoan/Desktop/localproj/metalrend/engine/gameengine
+CMAKE_SOURCE_DIR = /home/safoan/Desktop/localproj/metalrend/VizEngineTest/VizEngine
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/safoan/Desktop/localproj/metalrend/engine/gameengine/build
+CMAKE_BINARY_DIR = /home/safoan/Desktop/localproj/metalrend/VizEngineTest/VizEngine/build
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/engineprogramme.dir/all
 all: CMakeFiles/engine.dir/all
 .PHONY : all
 
 # The main recursive "codegen" target.
-codegen: CMakeFiles/engineprogramme.dir/codegen
 codegen: CMakeFiles/engine.dir/codegen
 .PHONY : codegen
 
@@ -77,41 +75,8 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/engineprogramme.dir/clean
 clean: CMakeFiles/engine.dir/clean
 .PHONY : clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/engineprogramme.dir
-
-# All Build rule for target.
-CMakeFiles/engineprogramme.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/engineprogramme.dir/build.make CMakeFiles/engineprogramme.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/engineprogramme.dir/build.make CMakeFiles/engineprogramme.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/safoan/Desktop/localproj/metalrend/engine/gameengine/build/CMakeFiles --progress-num=6,7,8,9,10,11 "Built target engineprogramme"
-.PHONY : CMakeFiles/engineprogramme.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/engineprogramme.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/safoan/Desktop/localproj/metalrend/engine/gameengine/build/CMakeFiles 6
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/engineprogramme.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/safoan/Desktop/localproj/metalrend/engine/gameengine/build/CMakeFiles 0
-.PHONY : CMakeFiles/engineprogramme.dir/rule
-
-# Convenience name for target.
-engineprogramme: CMakeFiles/engineprogramme.dir/rule
-.PHONY : engineprogramme
-
-# codegen rule for target.
-CMakeFiles/engineprogramme.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/engineprogramme.dir/build.make CMakeFiles/engineprogramme.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/safoan/Desktop/localproj/metalrend/engine/gameengine/build/CMakeFiles --progress-num=6,7,8,9,10,11 "Finished codegen for target engineprogramme"
-.PHONY : CMakeFiles/engineprogramme.dir/codegen
-
-# clean rule for target.
-CMakeFiles/engineprogramme.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/engineprogramme.dir/build.make CMakeFiles/engineprogramme.dir/clean
-.PHONY : CMakeFiles/engineprogramme.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/engine.dir
@@ -120,14 +85,14 @@ CMakeFiles/engineprogramme.dir/clean:
 CMakeFiles/engine.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/safoan/Desktop/localproj/metalrend/engine/gameengine/build/CMakeFiles --progress-num=1,2,3,4,5 "Built target engine"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/safoan/Desktop/localproj/metalrend/VizEngineTest/VizEngine/build/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target engine"
 .PHONY : CMakeFiles/engine.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/engine.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/safoan/Desktop/localproj/metalrend/engine/gameengine/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/safoan/Desktop/localproj/metalrend/VizEngineTest/VizEngine/build/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/engine.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/safoan/Desktop/localproj/metalrend/engine/gameengine/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/safoan/Desktop/localproj/metalrend/VizEngineTest/VizEngine/build/CMakeFiles 0
 .PHONY : CMakeFiles/engine.dir/rule
 
 # Convenience name for target.
@@ -137,7 +102,7 @@ engine: CMakeFiles/engine.dir/rule
 # codegen rule for target.
 CMakeFiles/engine.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/safoan/Desktop/localproj/metalrend/engine/gameengine/build/CMakeFiles --progress-num=1,2,3,4,5 "Finished codegen for target engine"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/safoan/Desktop/localproj/metalrend/VizEngineTest/VizEngine/build/CMakeFiles --progress-num=1,2,3,4,5,6 "Finished codegen for target engine"
 .PHONY : CMakeFiles/engine.dir/codegen
 
 # clean rule for target.

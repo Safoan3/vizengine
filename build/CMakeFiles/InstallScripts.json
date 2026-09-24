@@ -1,7 +1,7 @@
 {
 	"InstallScripts" : 
 	[
-		"/home/safoan/Desktop/localproj/metalrend/engine/gameengine/build/cmake_install.cmake"
+		"/home/safoan/Desktop/localproj/metalrend/VizEngineTest/VizEngine/build/cmake_install.cmake"
 	],
 	"Parallel" : false
 }
