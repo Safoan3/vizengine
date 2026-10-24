@@ -2,7 +2,8 @@
 #include "../../../graphicsapi/graphicsapi.h"
 
 #include "../input/backends/linuxkernel.h"
-#include "../input/input.h"
+// #include "../input/input.h"
+
 #include "../objects/object.h"
 #include "../rendering/camera.h"
 
@@ -14,12 +15,14 @@
 #include <typeinfo>
 #include <unordered_map>
 
+/*
 enum inputMethods {
   linuxlts,
   glfw,
   win32,
   cocoa,
 };
+*/
 
 enum RenderingMethods {
   REND_dotted,
@@ -35,8 +38,9 @@ struct enj {
 
   space *TotalRenderImage;
 
-  inputData input;
-  u_int8_t inputMeth = linuxlts;
+  // inputData input;
+
+  //  u_int8_t inputMeth; // = linuxlts;
   std::vector<instance *> instances;
   std::unordered_map<std::type_index, std::vector<instance *>> typeinstances;
 
@@ -68,7 +72,9 @@ struct enj {
 
   void write(RenderingMethods rendering = REND_rasterize);
   void render();
-  instance *findobj(std::string name);
+  instance *findobj(std::string name, instance *target = nullptr);
+  instance *findchildfromtype(const std::type_info &typ, instance *target);
+
   void initPoll();
   void printDir();
 
@@ -80,7 +86,7 @@ struct enj {
     template <typename T> T *New(instance *parent);
 
     void del(instance *p);
-    void add(instance *ob);
+    void add(instance *ob, instance *parent = nullptr);
   };
 
   Instance ins = Instance(*this);

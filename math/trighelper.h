@@ -2,11 +2,11 @@
 #include "../../../graphicsapi/graphicsapi.h"
 const float pi = 3.14159265f;
 
-vec3df EulerCord(float x, float y) {
+inline vec3df EulerCord(float x, float y) {
   return {cosf(x) * cosf(y), sinf(y), sinf(x) * cosf(y)};
 }
 
-vec3df rotOperation(vec3df v, float rx, float ry, float rz) {
+inline vec3df rotOperation(vec3df v, float rx, float ry, float rz) {
   float xx = v.x;
   float yy = v.y;
   float zz = v.z;

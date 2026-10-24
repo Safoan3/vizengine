@@ -100,24 +100,10 @@ CMakeFiles/engine.dir/raycasting/raycast.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/engine.dir/raycasting/raycast.cpp.s"
 	/usr/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/safoan/Desktop/localproj/metalrend/VizEngineTest/VizEngine/raycasting/raycast.cpp -o CMakeFiles/engine.dir/raycasting/raycast.cpp.s
 
-CMakeFiles/engine.dir/rendering/render.cpp.o: CMakeFiles/engine.dir/flags.make
-CMakeFiles/engine.dir/rendering/render.cpp.o: /home/safoan/Desktop/localproj/metalrend/VizEngineTest/VizEngine/rendering/render.cpp
-CMakeFiles/engine.dir/rendering/render.cpp.o: CMakeFiles/engine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/safoan/Desktop/localproj/metalrend/VizEngineTest/VizEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/engine.dir/rendering/render.cpp.o"
-	/usr/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/engine.dir/rendering/render.cpp.o -MF CMakeFiles/engine.dir/rendering/render.cpp.o.d -o CMakeFiles/engine.dir/rendering/render.cpp.o -c /home/safoan/Desktop/localproj/metalrend/VizEngineTest/VizEngine/rendering/render.cpp
-
-CMakeFiles/engine.dir/rendering/render.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/engine.dir/rendering/render.cpp.i"
-	/usr/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/safoan/Desktop/localproj/metalrend/VizEngineTest/VizEngine/rendering/render.cpp > CMakeFiles/engine.dir/rendering/render.cpp.i
-
-CMakeFiles/engine.dir/rendering/render.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/engine.dir/rendering/render.cpp.s"
-	/usr/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/safoan/Desktop/localproj/metalrend/VizEngineTest/VizEngine/rendering/render.cpp -o CMakeFiles/engine.dir/rendering/render.cpp.s
-
 CMakeFiles/engine.dir/home/safoan/Desktop/localproj/metalrend/graphicsapi/graphicsapi.cpp.o: CMakeFiles/engine.dir/flags.make
 CMakeFiles/engine.dir/home/safoan/Desktop/localproj/metalrend/graphicsapi/graphicsapi.cpp.o: /home/safoan/Desktop/localproj/metalrend/graphicsapi/graphicsapi.cpp
 CMakeFiles/engine.dir/home/safoan/Desktop/localproj/metalrend/graphicsapi/graphicsapi.cpp.o: CMakeFiles/engine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/safoan/Desktop/localproj/metalrend/VizEngineTest/VizEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/engine.dir/home/safoan/Desktop/localproj/metalrend/graphicsapi/graphicsapi.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/safoan/Desktop/localproj/metalrend/VizEngineTest/VizEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/engine.dir/home/safoan/Desktop/localproj/metalrend/graphicsapi/graphicsapi.cpp.o"
 	/usr/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/engine.dir/home/safoan/Desktop/localproj/metalrend/graphicsapi/graphicsapi.cpp.o -MF CMakeFiles/engine.dir/home/safoan/Desktop/localproj/metalrend/graphicsapi/graphicsapi.cpp.o.d -o CMakeFiles/engine.dir/home/safoan/Desktop/localproj/metalrend/graphicsapi/graphicsapi.cpp.o -c /home/safoan/Desktop/localproj/metalrend/graphicsapi/graphicsapi.cpp
 
 CMakeFiles/engine.dir/home/safoan/Desktop/localproj/metalrend/graphicsapi/graphicsapi.cpp.i: cmake_force
@@ -131,7 +117,7 @@ CMakeFiles/engine.dir/home/safoan/Desktop/localproj/metalrend/graphicsapi/graphi
 CMakeFiles/engine.dir/libs/miniaud/wrapper.cpp.o: CMakeFiles/engine.dir/flags.make
 CMakeFiles/engine.dir/libs/miniaud/wrapper.cpp.o: /home/safoan/Desktop/localproj/metalrend/VizEngineTest/VizEngine/libs/miniaud/wrapper.cpp
 CMakeFiles/engine.dir/libs/miniaud/wrapper.cpp.o: CMakeFiles/engine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/safoan/Desktop/localproj/metalrend/VizEngineTest/VizEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/engine.dir/libs/miniaud/wrapper.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/safoan/Desktop/localproj/metalrend/VizEngineTest/VizEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/engine.dir/libs/miniaud/wrapper.cpp.o"
 	/usr/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/engine.dir/libs/miniaud/wrapper.cpp.o -MF CMakeFiles/engine.dir/libs/miniaud/wrapper.cpp.o.d -o CMakeFiles/engine.dir/libs/miniaud/wrapper.cpp.o -c /home/safoan/Desktop/localproj/metalrend/VizEngineTest/VizEngine/libs/miniaud/wrapper.cpp
 
 CMakeFiles/engine.dir/libs/miniaud/wrapper.cpp.i: cmake_force
@@ -142,25 +128,103 @@ CMakeFiles/engine.dir/libs/miniaud/wrapper.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/engine.dir/libs/miniaud/wrapper.cpp.s"
 	/usr/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/safoan/Desktop/localproj/metalrend/VizEngineTest/VizEngine/libs/miniaud/wrapper.cpp -o CMakeFiles/engine.dir/libs/miniaud/wrapper.cpp.s
 
+CMakeFiles/engine.dir/rendering/RenderingMethod/dot.cpp.o: CMakeFiles/engine.dir/flags.make
+CMakeFiles/engine.dir/rendering/RenderingMethod/dot.cpp.o: /home/safoan/Desktop/localproj/metalrend/VizEngineTest/VizEngine/rendering/RenderingMethod/dot.cpp
+CMakeFiles/engine.dir/rendering/RenderingMethod/dot.cpp.o: CMakeFiles/engine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/safoan/Desktop/localproj/metalrend/VizEngineTest/VizEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/engine.dir/rendering/RenderingMethod/dot.cpp.o"
+	/usr/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/engine.dir/rendering/RenderingMethod/dot.cpp.o -MF CMakeFiles/engine.dir/rendering/RenderingMethod/dot.cpp.o.d -o CMakeFiles/engine.dir/rendering/RenderingMethod/dot.cpp.o -c /home/safoan/Desktop/localproj/metalrend/VizEngineTest/VizEngine/rendering/RenderingMethod/dot.cpp
+
+CMakeFiles/engine.dir/rendering/RenderingMethod/dot.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/engine.dir/rendering/RenderingMethod/dot.cpp.i"
+	/usr/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/safoan/Desktop/localproj/metalrend/VizEngineTest/VizEngine/rendering/RenderingMethod/dot.cpp > CMakeFiles/engine.dir/rendering/RenderingMethod/dot.cpp.i
+
+CMakeFiles/engine.dir/rendering/RenderingMethod/dot.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/engine.dir/rendering/RenderingMethod/dot.cpp.s"
+	/usr/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/safoan/Desktop/localproj/metalrend/VizEngineTest/VizEngine/rendering/RenderingMethod/dot.cpp -o CMakeFiles/engine.dir/rendering/RenderingMethod/dot.cpp.s
+
+CMakeFiles/engine.dir/rendering/RenderingMethod/wireframe.cpp.o: CMakeFiles/engine.dir/flags.make
+CMakeFiles/engine.dir/rendering/RenderingMethod/wireframe.cpp.o: /home/safoan/Desktop/localproj/metalrend/VizEngineTest/VizEngine/rendering/RenderingMethod/wireframe.cpp
+CMakeFiles/engine.dir/rendering/RenderingMethod/wireframe.cpp.o: CMakeFiles/engine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/safoan/Desktop/localproj/metalrend/VizEngineTest/VizEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/engine.dir/rendering/RenderingMethod/wireframe.cpp.o"
+	/usr/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/engine.dir/rendering/RenderingMethod/wireframe.cpp.o -MF CMakeFiles/engine.dir/rendering/RenderingMethod/wireframe.cpp.o.d -o CMakeFiles/engine.dir/rendering/RenderingMethod/wireframe.cpp.o -c /home/safoan/Desktop/localproj/metalrend/VizEngineTest/VizEngine/rendering/RenderingMethod/wireframe.cpp
+
+CMakeFiles/engine.dir/rendering/RenderingMethod/wireframe.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/engine.dir/rendering/RenderingMethod/wireframe.cpp.i"
+	/usr/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/safoan/Desktop/localproj/metalrend/VizEngineTest/VizEngine/rendering/RenderingMethod/wireframe.cpp > CMakeFiles/engine.dir/rendering/RenderingMethod/wireframe.cpp.i
+
+CMakeFiles/engine.dir/rendering/RenderingMethod/wireframe.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/engine.dir/rendering/RenderingMethod/wireframe.cpp.s"
+	/usr/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/safoan/Desktop/localproj/metalrend/VizEngineTest/VizEngine/rendering/RenderingMethod/wireframe.cpp -o CMakeFiles/engine.dir/rendering/RenderingMethod/wireframe.cpp.s
+
+CMakeFiles/engine.dir/rendering/RenderingMethod/rasterizing.cpp.o: CMakeFiles/engine.dir/flags.make
+CMakeFiles/engine.dir/rendering/RenderingMethod/rasterizing.cpp.o: /home/safoan/Desktop/localproj/metalrend/VizEngineTest/VizEngine/rendering/RenderingMethod/rasterizing.cpp
+CMakeFiles/engine.dir/rendering/RenderingMethod/rasterizing.cpp.o: CMakeFiles/engine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/safoan/Desktop/localproj/metalrend/VizEngineTest/VizEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/engine.dir/rendering/RenderingMethod/rasterizing.cpp.o"
+	/usr/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/engine.dir/rendering/RenderingMethod/rasterizing.cpp.o -MF CMakeFiles/engine.dir/rendering/RenderingMethod/rasterizing.cpp.o.d -o CMakeFiles/engine.dir/rendering/RenderingMethod/rasterizing.cpp.o -c /home/safoan/Desktop/localproj/metalrend/VizEngineTest/VizEngine/rendering/RenderingMethod/rasterizing.cpp
+
+CMakeFiles/engine.dir/rendering/RenderingMethod/rasterizing.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/engine.dir/rendering/RenderingMethod/rasterizing.cpp.i"
+	/usr/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/safoan/Desktop/localproj/metalrend/VizEngineTest/VizEngine/rendering/RenderingMethod/rasterizing.cpp > CMakeFiles/engine.dir/rendering/RenderingMethod/rasterizing.cpp.i
+
+CMakeFiles/engine.dir/rendering/RenderingMethod/rasterizing.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/engine.dir/rendering/RenderingMethod/rasterizing.cpp.s"
+	/usr/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/safoan/Desktop/localproj/metalrend/VizEngineTest/VizEngine/rendering/RenderingMethod/rasterizing.cpp -o CMakeFiles/engine.dir/rendering/RenderingMethod/rasterizing.cpp.s
+
+CMakeFiles/engine.dir/rendering/RenderingMethod/zbuffdebug.cpp.o: CMakeFiles/engine.dir/flags.make
+CMakeFiles/engine.dir/rendering/RenderingMethod/zbuffdebug.cpp.o: /home/safoan/Desktop/localproj/metalrend/VizEngineTest/VizEngine/rendering/RenderingMethod/zbuffdebug.cpp
+CMakeFiles/engine.dir/rendering/RenderingMethod/zbuffdebug.cpp.o: CMakeFiles/engine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/safoan/Desktop/localproj/metalrend/VizEngineTest/VizEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/engine.dir/rendering/RenderingMethod/zbuffdebug.cpp.o"
+	/usr/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/engine.dir/rendering/RenderingMethod/zbuffdebug.cpp.o -MF CMakeFiles/engine.dir/rendering/RenderingMethod/zbuffdebug.cpp.o.d -o CMakeFiles/engine.dir/rendering/RenderingMethod/zbuffdebug.cpp.o -c /home/safoan/Desktop/localproj/metalrend/VizEngineTest/VizEngine/rendering/RenderingMethod/zbuffdebug.cpp
+
+CMakeFiles/engine.dir/rendering/RenderingMethod/zbuffdebug.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/engine.dir/rendering/RenderingMethod/zbuffdebug.cpp.i"
+	/usr/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/safoan/Desktop/localproj/metalrend/VizEngineTest/VizEngine/rendering/RenderingMethod/zbuffdebug.cpp > CMakeFiles/engine.dir/rendering/RenderingMethod/zbuffdebug.cpp.i
+
+CMakeFiles/engine.dir/rendering/RenderingMethod/zbuffdebug.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/engine.dir/rendering/RenderingMethod/zbuffdebug.cpp.s"
+	/usr/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/safoan/Desktop/localproj/metalrend/VizEngineTest/VizEngine/rendering/RenderingMethod/zbuffdebug.cpp -o CMakeFiles/engine.dir/rendering/RenderingMethod/zbuffdebug.cpp.s
+
+CMakeFiles/engine.dir/rendering/RenderingMethod/raytracing.cpp.o: CMakeFiles/engine.dir/flags.make
+CMakeFiles/engine.dir/rendering/RenderingMethod/raytracing.cpp.o: /home/safoan/Desktop/localproj/metalrend/VizEngineTest/VizEngine/rendering/RenderingMethod/raytracing.cpp
+CMakeFiles/engine.dir/rendering/RenderingMethod/raytracing.cpp.o: CMakeFiles/engine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/safoan/Desktop/localproj/metalrend/VizEngineTest/VizEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/engine.dir/rendering/RenderingMethod/raytracing.cpp.o"
+	/usr/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/engine.dir/rendering/RenderingMethod/raytracing.cpp.o -MF CMakeFiles/engine.dir/rendering/RenderingMethod/raytracing.cpp.o.d -o CMakeFiles/engine.dir/rendering/RenderingMethod/raytracing.cpp.o -c /home/safoan/Desktop/localproj/metalrend/VizEngineTest/VizEngine/rendering/RenderingMethod/raytracing.cpp
+
+CMakeFiles/engine.dir/rendering/RenderingMethod/raytracing.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/engine.dir/rendering/RenderingMethod/raytracing.cpp.i"
+	/usr/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/safoan/Desktop/localproj/metalrend/VizEngineTest/VizEngine/rendering/RenderingMethod/raytracing.cpp > CMakeFiles/engine.dir/rendering/RenderingMethod/raytracing.cpp.i
+
+CMakeFiles/engine.dir/rendering/RenderingMethod/raytracing.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/engine.dir/rendering/RenderingMethod/raytracing.cpp.s"
+	/usr/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/safoan/Desktop/localproj/metalrend/VizEngineTest/VizEngine/rendering/RenderingMethod/raytracing.cpp -o CMakeFiles/engine.dir/rendering/RenderingMethod/raytracing.cpp.s
+
 # Object files for target engine
 engine_OBJECTS = \
 "CMakeFiles/engine.dir/engine/engine.cpp.o" \
 "CMakeFiles/engine.dir/raycasting/raycast.cpp.o" \
-"CMakeFiles/engine.dir/rendering/render.cpp.o" \
 "CMakeFiles/engine.dir/home/safoan/Desktop/localproj/metalrend/graphicsapi/graphicsapi.cpp.o" \
-"CMakeFiles/engine.dir/libs/miniaud/wrapper.cpp.o"
+"CMakeFiles/engine.dir/libs/miniaud/wrapper.cpp.o" \
+"CMakeFiles/engine.dir/rendering/RenderingMethod/dot.cpp.o" \
+"CMakeFiles/engine.dir/rendering/RenderingMethod/wireframe.cpp.o" \
+"CMakeFiles/engine.dir/rendering/RenderingMethod/rasterizing.cpp.o" \
+"CMakeFiles/engine.dir/rendering/RenderingMethod/zbuffdebug.cpp.o" \
+"CMakeFiles/engine.dir/rendering/RenderingMethod/raytracing.cpp.o"
 
 # External object files for target engine
 engine_EXTERNAL_OBJECTS =
 
 libengine.a: CMakeFiles/engine.dir/engine/engine.cpp.o
 libengine.a: CMakeFiles/engine.dir/raycasting/raycast.cpp.o
-libengine.a: CMakeFiles/engine.dir/rendering/render.cpp.o
 libengine.a: CMakeFiles/engine.dir/home/safoan/Desktop/localproj/metalrend/graphicsapi/graphicsapi.cpp.o
 libengine.a: CMakeFiles/engine.dir/libs/miniaud/wrapper.cpp.o
+libengine.a: CMakeFiles/engine.dir/rendering/RenderingMethod/dot.cpp.o
+libengine.a: CMakeFiles/engine.dir/rendering/RenderingMethod/wireframe.cpp.o
+libengine.a: CMakeFiles/engine.dir/rendering/RenderingMethod/rasterizing.cpp.o
+libengine.a: CMakeFiles/engine.dir/rendering/RenderingMethod/zbuffdebug.cpp.o
+libengine.a: CMakeFiles/engine.dir/rendering/RenderingMethod/raytracing.cpp.o
 libengine.a: CMakeFiles/engine.dir/build.make
 libengine.a: CMakeFiles/engine.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/safoan/Desktop/localproj/metalrend/VizEngineTest/VizEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX static library libengine.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/safoan/Desktop/localproj/metalrend/VizEngineTest/VizEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX static library libengine.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/engine.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/engine.dir/link.txt --verbose=$(VERBOSE)
 

@@ -8,7 +8,7 @@
 
 namespace list_objs {
 
-instanceTypes::basepart *createTriangle(vec3df position, float length) {
+inline instanceTypes::basepart *createTriangle(vec3df position, float length) {
   instanceTypes::basepart *newObj = new instanceTypes::basepart();
 
   newObj->position = position;
@@ -39,8 +39,8 @@ instanceTypes::basepart *createTriangle(vec3df position, float length) {
   newObj->dvertices = vc;
   return newObj;
 }
-instanceTypes::basepart *createTriangleOctahedron(vec3df position,
-                                                  float length) {
+inline instanceTypes::basepart *createTriangleOctahedron(vec3df position,
+                                                         float length) {
   instanceTypes::basepart *newObj = new instanceTypes::basepart();
 
   newObj->position = position;
@@ -98,7 +98,7 @@ struct objinf {
   std::vector<vec3df> vertices;
 };
 
-objinf reproduceTriangle(vec3df c1, vec3df c2, vec3df c3) {
+inline objinf reproduceTriangle(vec3df c1, vec3df c2, vec3df c3) {
   vec3df x0 = c1;
   vec3df x1 = (c1 + c2) * 0.5f;
   vec3df x2 = c2;
@@ -134,8 +134,8 @@ static void subdivideRecursive(const vec3df &v1, const vec3df &v2,
   }
 }
 
-instanceTypes::basepart *createTriangleSphere(vec3df position, float length,
-                                              int detail) {
+inline instanceTypes::basepart *createTriangleSphere(vec3df position,
+                                                     float length, int detail) {
   instanceTypes::basepart *newObj = new instanceTypes::basepart();
   newObj->position = position;
   newObj->col3 = {1.0f, 0.0f, 1.0f};
@@ -202,8 +202,8 @@ instanceTypes::basepart *createTriangleSphere(vec3df position, float length,
   return newObj;
 }
 
-instanceTypes::basepart *createPlanerTriangle(vec3df position, float length,
-                                              int depth) {
+inline instanceTypes::basepart *createPlanerTriangle(vec3df position,
+                                                     float length, int depth) {
   instanceTypes::basepart *newObj = new instanceTypes::basepart();
 
   newObj->position = position;
@@ -261,8 +261,8 @@ instanceTypes::basepart *createPlanerTriangle(vec3df position, float length,
   return newObj;
 }
 
-instanceTypes::basepart *createPlaneTrTriangle(vec3df position, float length,
-                                               int depth) {
+inline instanceTypes::basepart *createPlaneTrTriangle(vec3df position,
+                                                      float length, int depth) {
   instanceTypes::basepart *newObj = new instanceTypes::basepart();
 
   newObj->position = position;
@@ -282,35 +282,14 @@ instanceTypes::basepart *createPlaneTrTriangle(vec3df position, float length,
       // Back face (z = -length)
   };
 
-  std::vector<vec3df> faceVerts;
-  std::vector<int> faceEdges;
-
-  for (size_t i = 0; i + 2 < vzE.size(); i += 3) {
-    vec3df v1 = vzV[vzE[i]];
-    vec3df v2 = vzV[vzE[i + 1]];
-    vec3df v3 = vzV[vzE[i + 2]];
-
-    std::vector<vec3df> faceVerts;
-    std::vector<int> faceEdges;
-    subdivideRecursive(v1, v2, v3, depth, faceVerts, faceEdges);
-
-    int base = (int)newObj->vertices.size();
-    for (int e : faceEdges)
-      newObj->edges.push_back(base + e);
-
-    for (vec3df &pp : faceVerts) {
-      newObj->vertices.push_back(pp);
-      newObj->dvertices.push_back(pp);
-    }
-  }
-
-  //  newObj->edges = vzE;
-  // newObj->vertices = vzV;
-  // newObj->dvertices = vzV;
+  newObj->edges = vzE;
+  newObj->vertices = vzV;
+  newObj->dvertices = vzV;
   return newObj;
 }
 
-instanceTypes::basepart *createCubeTrigangle(vec3df position, float length) {
+inline instanceTypes::basepart *createCubeTrigangle(vec3df position,
+                                                    float length) {
   instanceTypes::basepart *newObj = new instanceTypes::basepart();
 
   newObj->position = position;
@@ -318,10 +297,6 @@ instanceTypes::basepart *createCubeTrigangle(vec3df position, float length) {
   newObj->name = "Cube! ~//w//~";
   newObj->vertices.resize(8);
   newObj->edges.resize(24);
-
-  std::cout << "cube TTT has been created on ";
-  position.print();
-  std::cout << "\n";
 
   std::vector<vec3df> vc = {
       {-1 * length, 1 * length, 1 * length},  // 0
@@ -352,8 +327,8 @@ instanceTypes::basepart *createCubeTrigangle(vec3df position, float length) {
   return newObj;
 }
 
-instanceTypes::basepart *createDonut(vec3df position, float rad, float innerrad,
-                                     int iv, int cv) {
+inline instanceTypes::basepart *createDonut(vec3df position, float rad,
+                                            float innerrad, int iv, int cv) {
   instanceTypes::basepart *newObj = new instanceTypes::basepart();
 
   newObj->position = position;

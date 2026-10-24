@@ -4,7 +4,7 @@
 # compile CXX with /usr/sbin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/safoan/Desktop/localproj/metalrend/VizEngineTest/VizEngine/./engine -I/home/safoan/Desktop/localproj/metalrend/VizEngineTest/VizEngine/./raycasting -I/home/safoan/Desktop/localproj/metalrend/VizEngineTest/VizEngine/./rendering -I/home/safoan/Desktop/localproj/metalrend/VizEngineTest/VizEngine/../../graphicsapi -I/home/safoan/Desktop/localproj/metalrend/VizEngineTest/VizEngine/. -I/home/safoan/Desktop/localproj/metalrend/VizEngineTest/VizEngine/./objects -I/home/safoan/Desktop/localproj/metalrend/VizEngineTest/VizEngine/./math -I/home/safoan/Desktop/localproj/metalrend/VizEngineTest/VizEngine/./libs/imgloader -I/home/safoan/Desktop/localproj/metalrend/VizEngineTest/VizEngine/./libs/miniaud
+CXX_INCLUDES = -I/home/safoan/Desktop/localproj/metalrend/VizEngineTest/VizEngine/./engine -I/home/safoan/Desktop/localproj/metalrend/VizEngineTest/VizEngine/./raycasting -I/home/safoan/Desktop/localproj/metalrend/VizEngineTest/VizEngine/./rendering -I/home/safoan/Desktop/localproj/metalrend/VizEngineTest/VizEngine/../../graphicsapi -I/home/safoan/Desktop/localproj/metalrend/VizEngineTest/VizEngine/. -I/home/safoan/Desktop/localproj/metalrend/VizEngineTest/VizEngine/./objects -I/home/safoan/Desktop/localproj/metalrend/VizEngineTest/VizEngine/./math -I/home/safoan/Desktop/localproj/metalrend/VizEngineTest/VizEngine/./libs/imgloader -I/home/safoan/Desktop/localproj/metalrend/VizEngineTest/VizEngine/./libs/miniaud -I/home/safoan/Desktop/localproj/metalrend/VizEngineTest/VizEngine/./rendering/RenderingMethod
 
 CXX_FLAGS = -O2 -march=native
 

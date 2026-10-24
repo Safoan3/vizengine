@@ -8,8 +8,8 @@ inline vec2df perspective(vec3df a, float focalL = 240.0f) {
   float iz = 1.0f;
   float forcalLength = focalL;
 
-  if (a.z < 0.001f) {
-    iz = 0.001f;
+  if (a.z < 0.000001f) {
+    iz = 0.000001f;
   } else {
     iz = 1.0f / a.z;
   }
@@ -30,9 +30,15 @@ inline vec2df project(const camera &cam, vec3df p1, vec2 resolution,
   vec3df top = left.cross(dir);
 
   vec3df nP1 = p1 - pos;
-  float zmag = nP1.magnitude();
+  float zmag = dir.dot(nP1);
 
-  vec2df newProj = perspective({nP1.dot(left), nP1.dot(top), zmag}, fl);
+  float half = 0.5f;
+
+  float focalLength = (resolution.x * half) / tanf(fl * half);
+  // std::cout << focalLength << "\n";
+
+  vec2df newProj =
+      perspective({nP1.dot(left), nP1.dot(top), zmag}, focalLength);
   vec2df screenpos = {(float)resolution.x / 2.0f, (float)resolution.y / 2.0f};
 
   newProj = newProj + screenpos;

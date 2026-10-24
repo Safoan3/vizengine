@@ -12,7 +12,11 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/safoan/Desktop/localproj/metalrend/graphicsapi/graphicsapi.cpp" "CMakeFiles/engine.dir/home/safoan/Desktop/localproj/metalrend/graphicsapi/graphicsapi.cpp.o" "gcc" "CMakeFiles/engine.dir/home/safoan/Desktop/localproj/metalrend/graphicsapi/graphicsapi.cpp.o.d"
   "/home/safoan/Desktop/localproj/metalrend/VizEngineTest/VizEngine/libs/miniaud/wrapper.cpp" "CMakeFiles/engine.dir/libs/miniaud/wrapper.cpp.o" "gcc" "CMakeFiles/engine.dir/libs/miniaud/wrapper.cpp.o.d"
   "/home/safoan/Desktop/localproj/metalrend/VizEngineTest/VizEngine/raycasting/raycast.cpp" "CMakeFiles/engine.dir/raycasting/raycast.cpp.o" "gcc" "CMakeFiles/engine.dir/raycasting/raycast.cpp.o.d"
-  "/home/safoan/Desktop/localproj/metalrend/VizEngineTest/VizEngine/rendering/render.cpp" "CMakeFiles/engine.dir/rendering/render.cpp.o" "gcc" "CMakeFiles/engine.dir/rendering/render.cpp.o.d"
+  "/home/safoan/Desktop/localproj/metalrend/VizEngineTest/VizEngine/rendering/RenderingMethod/dot.cpp" "CMakeFiles/engine.dir/rendering/RenderingMethod/dot.cpp.o" "gcc" "CMakeFiles/engine.dir/rendering/RenderingMethod/dot.cpp.o.d"
+  "/home/safoan/Desktop/localproj/metalrend/VizEngineTest/VizEngine/rendering/RenderingMethod/rasterizing.cpp" "CMakeFiles/engine.dir/rendering/RenderingMethod/rasterizing.cpp.o" "gcc" "CMakeFiles/engine.dir/rendering/RenderingMethod/rasterizing.cpp.o.d"
+  "/home/safoan/Desktop/localproj/metalrend/VizEngineTest/VizEngine/rendering/RenderingMethod/raytracing.cpp" "CMakeFiles/engine.dir/rendering/RenderingMethod/raytracing.cpp.o" "gcc" "CMakeFiles/engine.dir/rendering/RenderingMethod/raytracing.cpp.o.d"
+  "/home/safoan/Desktop/localproj/metalrend/VizEngineTest/VizEngine/rendering/RenderingMethod/wireframe.cpp" "CMakeFiles/engine.dir/rendering/RenderingMethod/wireframe.cpp.o" "gcc" "CMakeFiles/engine.dir/rendering/RenderingMethod/wireframe.cpp.o.d"
+  "/home/safoan/Desktop/localproj/metalrend/VizEngineTest/VizEngine/rendering/RenderingMethod/zbuffdebug.cpp" "CMakeFiles/engine.dir/rendering/RenderingMethod/zbuffdebug.cpp.o" "gcc" "CMakeFiles/engine.dir/rendering/RenderingMethod/zbuffdebug.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

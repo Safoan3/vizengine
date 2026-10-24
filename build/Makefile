@@ -225,29 +225,125 @@ raycasting/raycast.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/raycasting/raycast.cpp.s
 .PHONY : raycasting/raycast.cpp.s
 
-rendering/render.o: rendering/render.cpp.o
-.PHONY : rendering/render.o
+rendering/RenderingMethod/dot.o: rendering/RenderingMethod/dot.cpp.o
+.PHONY : rendering/RenderingMethod/dot.o
 
 # target to build an object file
-rendering/render.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/rendering/render.cpp.o
-.PHONY : rendering/render.cpp.o
+rendering/RenderingMethod/dot.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/rendering/RenderingMethod/dot.cpp.o
+.PHONY : rendering/RenderingMethod/dot.cpp.o
 
-rendering/render.i: rendering/render.cpp.i
-.PHONY : rendering/render.i
+rendering/RenderingMethod/dot.i: rendering/RenderingMethod/dot.cpp.i
+.PHONY : rendering/RenderingMethod/dot.i
 
 # target to preprocess a source file
-rendering/render.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/rendering/render.cpp.i
-.PHONY : rendering/render.cpp.i
+rendering/RenderingMethod/dot.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/rendering/RenderingMethod/dot.cpp.i
+.PHONY : rendering/RenderingMethod/dot.cpp.i
 
-rendering/render.s: rendering/render.cpp.s
-.PHONY : rendering/render.s
+rendering/RenderingMethod/dot.s: rendering/RenderingMethod/dot.cpp.s
+.PHONY : rendering/RenderingMethod/dot.s
 
 # target to generate assembly for a file
-rendering/render.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/rendering/render.cpp.s
-.PHONY : rendering/render.cpp.s
+rendering/RenderingMethod/dot.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/rendering/RenderingMethod/dot.cpp.s
+.PHONY : rendering/RenderingMethod/dot.cpp.s
+
+rendering/RenderingMethod/rasterizing.o: rendering/RenderingMethod/rasterizing.cpp.o
+.PHONY : rendering/RenderingMethod/rasterizing.o
+
+# target to build an object file
+rendering/RenderingMethod/rasterizing.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/rendering/RenderingMethod/rasterizing.cpp.o
+.PHONY : rendering/RenderingMethod/rasterizing.cpp.o
+
+rendering/RenderingMethod/rasterizing.i: rendering/RenderingMethod/rasterizing.cpp.i
+.PHONY : rendering/RenderingMethod/rasterizing.i
+
+# target to preprocess a source file
+rendering/RenderingMethod/rasterizing.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/rendering/RenderingMethod/rasterizing.cpp.i
+.PHONY : rendering/RenderingMethod/rasterizing.cpp.i
+
+rendering/RenderingMethod/rasterizing.s: rendering/RenderingMethod/rasterizing.cpp.s
+.PHONY : rendering/RenderingMethod/rasterizing.s
+
+# target to generate assembly for a file
+rendering/RenderingMethod/rasterizing.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/rendering/RenderingMethod/rasterizing.cpp.s
+.PHONY : rendering/RenderingMethod/rasterizing.cpp.s
+
+rendering/RenderingMethod/raytracing.o: rendering/RenderingMethod/raytracing.cpp.o
+.PHONY : rendering/RenderingMethod/raytracing.o
+
+# target to build an object file
+rendering/RenderingMethod/raytracing.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/rendering/RenderingMethod/raytracing.cpp.o
+.PHONY : rendering/RenderingMethod/raytracing.cpp.o
+
+rendering/RenderingMethod/raytracing.i: rendering/RenderingMethod/raytracing.cpp.i
+.PHONY : rendering/RenderingMethod/raytracing.i
+
+# target to preprocess a source file
+rendering/RenderingMethod/raytracing.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/rendering/RenderingMethod/raytracing.cpp.i
+.PHONY : rendering/RenderingMethod/raytracing.cpp.i
+
+rendering/RenderingMethod/raytracing.s: rendering/RenderingMethod/raytracing.cpp.s
+.PHONY : rendering/RenderingMethod/raytracing.s
+
+# target to generate assembly for a file
+rendering/RenderingMethod/raytracing.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/rendering/RenderingMethod/raytracing.cpp.s
+.PHONY : rendering/RenderingMethod/raytracing.cpp.s
+
+rendering/RenderingMethod/wireframe.o: rendering/RenderingMethod/wireframe.cpp.o
+.PHONY : rendering/RenderingMethod/wireframe.o
+
+# target to build an object file
+rendering/RenderingMethod/wireframe.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/rendering/RenderingMethod/wireframe.cpp.o
+.PHONY : rendering/RenderingMethod/wireframe.cpp.o
+
+rendering/RenderingMethod/wireframe.i: rendering/RenderingMethod/wireframe.cpp.i
+.PHONY : rendering/RenderingMethod/wireframe.i
+
+# target to preprocess a source file
+rendering/RenderingMethod/wireframe.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/rendering/RenderingMethod/wireframe.cpp.i
+.PHONY : rendering/RenderingMethod/wireframe.cpp.i
+
+rendering/RenderingMethod/wireframe.s: rendering/RenderingMethod/wireframe.cpp.s
+.PHONY : rendering/RenderingMethod/wireframe.s
+
+# target to generate assembly for a file
+rendering/RenderingMethod/wireframe.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/rendering/RenderingMethod/wireframe.cpp.s
+.PHONY : rendering/RenderingMethod/wireframe.cpp.s
+
+rendering/RenderingMethod/zbuffdebug.o: rendering/RenderingMethod/zbuffdebug.cpp.o
+.PHONY : rendering/RenderingMethod/zbuffdebug.o
+
+# target to build an object file
+rendering/RenderingMethod/zbuffdebug.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/rendering/RenderingMethod/zbuffdebug.cpp.o
+.PHONY : rendering/RenderingMethod/zbuffdebug.cpp.o
+
+rendering/RenderingMethod/zbuffdebug.i: rendering/RenderingMethod/zbuffdebug.cpp.i
+.PHONY : rendering/RenderingMethod/zbuffdebug.i
+
+# target to preprocess a source file
+rendering/RenderingMethod/zbuffdebug.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/rendering/RenderingMethod/zbuffdebug.cpp.i
+.PHONY : rendering/RenderingMethod/zbuffdebug.cpp.i
+
+rendering/RenderingMethod/zbuffdebug.s: rendering/RenderingMethod/zbuffdebug.cpp.s
+.PHONY : rendering/RenderingMethod/zbuffdebug.s
+
+# target to generate assembly for a file
+rendering/RenderingMethod/zbuffdebug.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/rendering/RenderingMethod/zbuffdebug.cpp.s
+.PHONY : rendering/RenderingMethod/zbuffdebug.cpp.s
 
 # Help Target
 help:
@@ -270,9 +366,21 @@ help:
 	@echo "... raycasting/raycast.o"
 	@echo "... raycasting/raycast.i"
 	@echo "... raycasting/raycast.s"
-	@echo "... rendering/render.o"
-	@echo "... rendering/render.i"
-	@echo "... rendering/render.s"
+	@echo "... rendering/RenderingMethod/dot.o"
+	@echo "... rendering/RenderingMethod/dot.i"
+	@echo "... rendering/RenderingMethod/dot.s"
+	@echo "... rendering/RenderingMethod/rasterizing.o"
+	@echo "... rendering/RenderingMethod/rasterizing.i"
+	@echo "... rendering/RenderingMethod/rasterizing.s"
+	@echo "... rendering/RenderingMethod/raytracing.o"
+	@echo "... rendering/RenderingMethod/raytracing.i"
+	@echo "... rendering/RenderingMethod/raytracing.s"
+	@echo "... rendering/RenderingMethod/wireframe.o"
+	@echo "... rendering/RenderingMethod/wireframe.i"
+	@echo "... rendering/RenderingMethod/wireframe.s"
+	@echo "... rendering/RenderingMethod/zbuffdebug.o"
+	@echo "... rendering/RenderingMethod/zbuffdebug.i"
+	@echo "... rendering/RenderingMethod/zbuffdebug.s"
 .PHONY : help
 
 

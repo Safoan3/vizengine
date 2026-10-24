@@ -8,10 +8,8 @@ std::pair<vec3df, vec3df> getAxes(vec3df c1, vec3df c2, vec3df c3) {
   vec3df origin = c1;
   vec3df p1 = c2 - origin;
   vec3df p2 = c3 - origin;
-
   vec3df normal = p1.cross(p2).normalize();
   vec3df xaxis = p1.cross(normal).normalize();
-
   vec3df yaxis = normal.cross(xaxis).normalize();
   return {xaxis, yaxis};
 };
@@ -20,6 +18,45 @@ vec2df convert(vec3df point, std::pair<vec3df, vec3df> axes) {
   return {point.dot(axes.first), point.dot(axes.second)};
 }
 
+raycast::result raycast::lowSphereCast(vec3df Origin, vec3df Direction,
+                                       vec3df Center, float radius) {
+  raycast::result toRet;
+  vec3df D = Direction;
+  vec3df L = Origin - Center;
+  float DL = L.dot(D);
+  float DD = D.dot(D);
+  float LL = L.dot(L);
+
+  float ConstantA = DD;
+  float ConstantB = -2 * DL;
+  float ConstantC = LL - (radius * radius);
+
+  float discriminate = (ConstantB * ConstantB) - (4 * ConstantA * ConstantC);
+
+  if (discriminate >= 0) {
+    float sqrC = std::sqrt(discriminate);
+
+    float T1 = -(-ConstantB + sqrC) / (2 * ConstantA);
+    float T2 = -(-ConstantB - sqrC) / (2 * ConstantA);
+
+    if (T2 > 0.0f) {
+      toRet.hit = true;
+      toRet.exited = true;
+    }
+
+    vec3df HitPos = Origin + (D * T1);
+    vec3df ExitPos = Origin + (D * T2);
+
+    toRet.exitPos = ExitPos;
+    toRet.hitpos = HitPos;
+    toRet.distance = T1;
+    toRet.normal = (HitPos - Center).normalize() * -1;
+
+    //    std::cout << "raju beta " << T1 << ", " << T2 << "\n";
+  }
+  return toRet;
+};
+
 raycast::result raycast::lowCast(vec3df Origin, vec3df Direction, vec3df c1,
                                  vec3df c2, vec3df c3) {
   raycast::result toRet;
@@ -27,16 +64,12 @@ raycast::result raycast::lowCast(vec3df Origin, vec3df Direction, vec3df c1,
   vec3df c1n = c2 - c1;
   vec3df c2n = c3 - c1;
   vec3df normal = c1n.cross(c2n).normalize();
-
-  float dot = normal.dot(Direction.normalize());
-
-  if (dot < 0.0001f) {
-    return toRet;
-  }
-
+  float dot = normal.dot(Direction);
+  // if (dot < 0.0001f) {
+  // return toRet;
+  //}
   float D = (normal.dot(c1));
   // Ax+By+Cz+D = 0
-
   float t = 0.0f;
   vec3df P = Origin + (Direction * t);
   t = (D - normal.x * Origin.x - normal.y * Origin.y - normal.z * Origin.z) /
@@ -47,6 +80,7 @@ raycast::result raycast::lowCast(vec3df Origin, vec3df Direction, vec3df c1,
   toRet.normal = normal;
 
   auto axes = getAxes(c1, c2, c3);
+
   vec2df localC1 = {0, 0};
   vec2df localC2 = convert(c1n, axes);
   vec2df localC3 = convert(c2n, axes);
@@ -68,18 +102,18 @@ raycast::result raycast::lowCast(vec3df Origin, vec3df Direction, vec3df c1,
 }
 
 raycast::resultenj
+
 raycast::raycastEnj(enj &enjine, vec3df origin, vec3df dir,
                     std::vector<instanceTypes::basepart *> iignoreList) {
 
   std::pair<raycast::result, float> Prev;
   Prev.second = INFINITY;
-
+  vec3df lastHit;
   instanceTypes::basepart *ho = nullptr;
-
+  vec3df comp_norm;
   for (instance *ob : enjine.typeinstances[typeid(instanceTypes::basepart)]) {
     if (auto *pt = dynamic_cast<instanceTypes::basepart *>(ob)) {
       bool ignoreFound = false;
-
       for (instanceTypes::basepart *ok : iignoreList) {
         if (ok != nullptr && ok == pt) {
           ignoreFound = true;
@@ -89,32 +123,64 @@ raycast::raycastEnj(enj &enjine, vec3df origin, vec3df dir,
       if (ignoreFound == true)
         continue;
 
-      for (int i = 0; i + 2 < pt->edges.size(); i = i + 3) {
-        vec3df vert1 = pt->vertices[pt->edges[i]] + pt->position;
-        vec3df vert2 = pt->vertices[pt->edges[i + 1]] + pt->position;
-        vec3df vert3 = pt->vertices[pt->edges[i + 2]] + pt->position;
-
+      if (pt->name == "sphere") {
+        float radius = pt->scale.x * 0.5f;
         raycast::result result =
-            raycast::lowCast(origin, dir, vert1, vert2, vert3);
+            raycast::lowSphereCast(origin, dir, pt->position, radius);
 
         if (result.hit == true) {
           if (result.distance < Prev.second) {
             result.r = pt->col3.r;
             result.g = pt->col3.g;
             result.b = pt->col3.b;
+            lastHit = Prev.first.hitpos;
 
             Prev.first = result;
+
+            comp_norm = Prev.first.normal;
+
             Prev.second = result.distance;
+            lastHit = result.exitPos;
             ho = pt;
+          }
+        }
+
+      } else {
+
+        for (int i = 0; i + 2 < pt->edges.size(); i = i + 3) {
+          vec3df vert1 = pt->vertices[pt->edges[i]] + pt->position;
+          vec3df vert2 = pt->vertices[pt->edges[i + 1]] + pt->position;
+          vec3df vert3 = pt->vertices[pt->edges[i + 2]] + pt->position;
+
+          raycast::result result =
+              raycast::lowCast(origin, dir, vert1, vert2, vert3);
+
+          if (result.hit == true) {
+            if (result.distance < Prev.second) {
+              result.r = pt->col3.r;
+              result.g = pt->col3.g;
+              result.b = pt->col3.b;
+              lastHit = Prev.first.hitpos;
+
+              Prev.first = result;
+              comp_norm = Prev.first.normal;
+              // special case for spheres temporary.
+              // if (pt->name == "sphere") {
+
+              //  comp_norm = (result.hitpos - pt->position).normalize() * -1;
+              //}
+              //
+
+              Prev.second = result.distance;
+              ho = pt;
+            }
           }
         }
       }
     }
   }
 
-  return {Prev.first.normal, Prev.first.r,        Prev.first.g, Prev.first.b,
-          Prev.first.hitpos, Prev.first.distance, ho,           Prev.first.bar,
-          Prev.first.hit
-
-  };
+  return {comp_norm,         Prev.first.r,   Prev.first.g,        Prev.first.b,
+          Prev.first.hitpos, lastHit,        Prev.first.distance, ho,
+          Prev.first.bar,    Prev.first.hit, Prev.first.exited};
 };
